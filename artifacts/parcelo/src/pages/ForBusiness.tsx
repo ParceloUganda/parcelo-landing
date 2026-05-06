@@ -213,6 +213,120 @@ export default function ForBusiness() {
         </div>
       </section>
 
+      {/* ── WHY PARTNER ── */}
+      <section style={{ padding: '0 24px 72px' }}>
+        <div style={{ maxWidth: 'var(--container)', margin: 'auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <h2 style={{
+              fontSize: 'clamp(26px, 3.4vw, 44px)',
+              fontWeight: 800,
+              letterSpacing: '-0.03em',
+              margin: '0 0 14px',
+            }}>
+              Why Partner with Parcelo?
+            </h2>
+            <p style={{
+              fontSize: '16px',
+              color: 'var(--text-muted)',
+              maxWidth: '560px',
+              margin: 'auto',
+              lineHeight: 1.65,
+            }}>
+              We provide everything you need to streamline your global sourcing and maximize your profit margins.
+            </p>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '20px',
+          }} className="why-grid">
+            {[
+              {
+                icon: '📉',
+                title: 'Save 30–40% on Sourcing',
+                body: 'Access wholesale pricing and bulk sourcing discounts that dramatically reduce your import costs.',
+              },
+              {
+                icon: '🚚',
+                title: 'Reliable Fulfillment',
+                body: 'Track every order in real-time from the moment we buy it to the moment it arrives at your door.',
+              },
+              {
+                icon: '🛡️',
+                title: 'Quality Guaranteed',
+                body: 'Our expert buyers verify suppliers and inspect every product before purchase to ensure you receive exactly what you need.',
+              },
+              {
+                icon: '⏱️',
+                title: 'Faster Processing',
+                body: 'Priority sourcing and handling for business accounts means your orders are purchased and cleared faster.',
+              },
+              {
+                icon: '🎧',
+                title: 'Dedicated Support',
+                body: 'Get a dedicated account manager who understands your business needs and provides personalized assistance.',
+              },
+              {
+                icon: '📦',
+                title: 'Flexible Ordering',
+                body: 'No minimum order requirements. Order as much or as little as you need when you need it.',
+              },
+            ].map(({ icon, title, body }) => (
+              <div
+                key={title}
+                style={{
+                  background: 'var(--surface)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '16px',
+                  padding: '28px 24px',
+                  transition: 'border-color 0.2s, transform 0.2s',
+                }}
+                onMouseOver={e => {
+                  e.currentTarget.style.borderColor = 'rgba(251,202,12,0.35)';
+                  e.currentTarget.style.transform = 'translateY(-3px)';
+                }}
+                onMouseOut={e => {
+                  e.currentTarget.style.borderColor = 'var(--border)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                <div style={{
+                  width: '48px',
+                  height: '48px',
+                  borderRadius: '12px',
+                  background: 'rgba(251,202,12,0.1)',
+                  border: '1px solid rgba(251,202,12,0.2)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '22px',
+                  marginBottom: '18px',
+                }}>
+                  {icon}
+                </div>
+                <h3 style={{
+                  fontSize: '17px',
+                  fontWeight: 700,
+                  margin: '0 0 10px',
+                  letterSpacing: '-0.01em',
+                }}>
+                  {title}
+                </h3>
+                <p style={{
+                  fontSize: '14px',
+                  color: 'var(--text-muted)',
+                  lineHeight: 1.65,
+                  margin: 0,
+                }}>
+                  {body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── FORM ── */}
       <section style={{ padding: '0 24px 96px' }}>
         <div style={{ maxWidth: '680px', margin: 'auto' }}>
@@ -469,7 +583,11 @@ export default function ForBusiness() {
       <Footer />
 
       <style>{`
+        @media (max-width: 900px) {
+          .why-grid { grid-template-columns: 1fr 1fr !important; }
+        }
         @media (max-width: 600px) {
+          .why-grid { grid-template-columns: 1fr !important; }
           .form-row { grid-template-columns: 1fr !important; }
           .challenges-grid { grid-template-columns: 1fr !important; }
         }
