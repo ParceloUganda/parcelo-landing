@@ -1,45 +1,58 @@
-# [Project name]
+# Parcelo
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Personal shopping concierge landing page — lets Ugandans order anything from abroad (US, UK, UAE, China) and get it delivered to their doorstep in Kampala via WhatsApp.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/parcelo run dev` — run the Parcelo frontend (Vite dev server)
+- `pnpm --filter @workspace/api-server run dev` — run the API server (port auto-assigned)
 - `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- No required env vars for the frontend (purely static landing page)
+- `VITE_LOGO_DEV_KEY` — optional, used by the Brands section for logo images
 
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- Frontend: React 19 + Vite 7 + Tailwind CSS v4
+- API: Express 5 (scaffold only, not used by Parcelo landing page)
+- DB: PostgreSQL + Drizzle ORM (scaffold only, not used)
+- Fonts: Manrope (Google Fonts)
+- Routing: wouter (single-page, no client-side routing needed for landing)
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/parcelo/` — the main landing page artifact
+- `artifacts/parcelo/src/App.tsx` — root component, wires all sections
+- `artifacts/parcelo/src/components/` — all landing page sections (Nav, Hero, VSL, Marquee, Problem, HowItWorks, Testimonials, Pricing, Brands, FAQ, BottomCTA, Footer)
+- `artifacts/parcelo/src/parcelo.css` — brand CSS custom properties (colors, animations, responsive breakpoints)
+- `artifacts/parcelo/public/` — static assets (parcelo-logo.png, opengraph.jpg, favicon.svg)
+- `artifacts/api-server/` — Express API scaffold (unused by landing page)
+- `lib/api-spec/openapi.yaml` — API spec (scaffold only)
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- **Frontend-only landing page** — no backend or database needed; all sections are static React components
+- **CSS custom properties** for theming (`--bg`, `--gold`, `--text`, `--surface`, etc.) via `parcelo.css` — dark mode by default, light mode via `body.light` class
+- **IntersectionObserver** for scroll-triggered `fade-up` animations (in App.tsx `useEffect`)
+- **WhatsApp deep links** (`wa.me/256792170962`) are the primary CTA throughout the page
+- **Logo.dev API** used in Brands section for brand logos, with Google favicon fallback
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+A dark-themed, gold-accented landing page for Parcelo — a Kampala-based personal shopping service. Sections: sticky nav, hero with social proof, VSL video placeholder, company marquee, problem statement, 3-step how-it-works, testimonials grid, pricing cards, interactive brand browser (80+ stores across 12 categories), FAQ accordion, bottom CTA, footer.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Migrated from Vercel/v0; preserve the original design exactly
+- Brand colors: dark `#0A0A0B`, gold `#FBCA0C`; font: Manrope
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The Brands section uses `VITE_LOGO_DEV_KEY` for logo.dev API; logos fall back to Google favicons if the key is missing
+- parcelo.css defines the core design system — do not replace with Tailwind utilities
+- `body.light` class (not `.dark`) toggles light mode (inverted from shadcn convention)
 
 ## Pointers
 
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+- See the `pnpm-workspace` skill for workspace structure
+- See the `react-vite` skill for frontend build patterns
