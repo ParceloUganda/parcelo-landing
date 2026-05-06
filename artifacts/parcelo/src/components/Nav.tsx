@@ -1,18 +1,71 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'wouter';
 
 // TODO: replace with real auth state when auth is implemented
 const MOCK_LOGGED_IN = false;
 
+const NAV_LINKS = [
+  { label: 'Tracking', href: '#tracking' },
+  { label: 'For Business', href: '/for-business' },
+  { label: 'Login', href: '#login' },
+];
+
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(MOCK_LOGGED_IN);
+  const [isLoggedIn] = useState(MOCK_LOGGED_IN);
+  const [location] = useLocation();
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen]);
 
-  const links = ['Tracking', 'For Business', 'Login'];
+  const isRoute = (href: string) => href.startsWith('/') && location === href;
+
+  const linkEl = (label: string, href: string, onClick?: () => void) => {
+    const active = isRoute(href);
+    const sharedStyle: React.CSSProperties = {
+      fontSize: '14px',
+      fontWeight: 600,
+      color: active ? 'var(--gold)' : 'var(--text-muted)',
+      transition: 'color 0.15s',
+      textDecoration: 'none',
+      display: 'block',
+    };
+    const handlers = {
+      onMouseOver: (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.currentTarget.style.color = active ? 'var(--gold)' : 'var(--text)';
+      },
+      onMouseOut: (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.currentTarget.style.color = active ? 'var(--gold)' : 'var(--text-muted)';
+      },
+    };
+
+    if (href.startsWith('/')) {
+      return (
+        <Link
+          key={label}
+          href={href}
+          style={sharedStyle}
+          onClick={onClick}
+          {...handlers}
+        >
+          {label}
+        </Link>
+      );
+    }
+    return (
+      <a
+        key={label}
+        href={href}
+        style={sharedStyle}
+        onClick={onClick}
+        {...handlers}
+      >
+        {label}
+      </a>
+    );
+  };
 
   return (
     <>
@@ -23,7 +76,7 @@ const Nav = () => {
         backdropFilter: 'blur(14px)',
         background: 'var(--bg-nav)',
         borderBottom: '1px solid var(--border)',
-        height: '62px'
+        height: '62px',
       }}>
         <div style={{
           display: 'flex',
@@ -32,27 +85,15 @@ const Nav = () => {
           maxWidth: 'var(--container)',
           margin: 'auto',
           padding: '0 var(--gutter)',
-          height: '100%'
+          height: '100%',
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
             <img src={import.meta.env.BASE_URL + 'parcelo-logo.png'} alt="Parcelo Logo" style={{ width: '28px', height: '28px' }} />
             <span style={{ color: 'var(--gold)', fontWeight: 800, fontSize: '18px' }}>Parcelo</span>
-          </div>
+          </Link>
 
-          <div className="nav-center" style={{ display: 'flex', gap: '24px' }}>
-            {links.map(link => (
-              <a key={link} href={`#${link.toLowerCase().replace(' ', '-')}`} style={{
-                fontSize: '14px',
-                fontWeight: 600,
-                color: 'var(--text-muted)',
-                transition: 'color 0.15s'
-              }}
-              onMouseOver={e => e.currentTarget.style.color = 'var(--text)'}
-              onMouseOut={e => e.currentTarget.style.color = 'var(--text-muted)'}
-              >
-                {link}
-              </a>
-            ))}
+          <div className="nav-center" style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
+            {NAV_LINKS.map(({ label, href }) => linkEl(label, href))}
           </div>
 
           <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
@@ -99,6 +140,7 @@ const Nav = () => {
         </div>
       </nav>
 
+      {/* Mobile drawer */}
       <div
         style={{
           position: 'fixed',
@@ -149,67 +191,37 @@ const Nav = () => {
         </div>
 
         <nav style={{ flex: 1, padding: '8px 0' }}>
-          {links.map(link => (
-            <a
-              key={link}
-              href={`#${link.toLowerCase().replace(' ', '-')}`}
-              onClick={() => setMenuOpen(false)}
-              style={{
-                display: 'block',
-                padding: '16px 28px',
-                fontSize: '16px',
-                fontWeight: 600,
-                color: 'var(--text-muted)',
-                transition: 'color 0.15s',
-              }}
-              onMouseOver={e => e.currentTarget.style.color = 'var(--text)'}
-              onMouseOut={e => e.currentTarget.style.color = 'var(--text-muted)'}
-            >
-              {link}
-            </a>
+          {NAV_LINKS.map(({ label, href }) => (
+            <div key={label} style={{ padding: '0' }}>
+              {linkEl(label, href, () => setMenuOpen(false))}
+            </div>
           ))}
         </nav>
 
         <div style={{ padding: '20px', borderTop: '1px solid var(--border)' }}>
-          {isLoggedIn ? (
-            <a
-              href="/dashboard"
-              className="btn-gold"
-              onClick={() => setMenuOpen(false)}
-              style={{ display: 'block', textAlign: 'center', padding: '14px 20px', fontSize: '15px' }}
-            >
-              Dashboard
-            </a>
-          ) : (
-            <a
-              href="https://wa.me/256792170962"
-              className="btn-gold"
-              onClick={() => setMenuOpen(false)}
-              style={{ display: 'block', textAlign: 'center', padding: '14px 20px', fontSize: '15px' }}
-            >
-              💬 Get Free Quote
-            </a>
-          )}
-
-          <button
-            onClick={() => setIsLoggedIn(v => !v)}
-            style={{
-              marginTop: '12px',
-              width: '100%',
-              background: 'none',
-              border: '1px dashed var(--border-mid)',
-              borderRadius: '8px',
-              color: 'var(--text-faint)',
-              fontSize: '11px',
-              padding: '7px',
-              cursor: 'pointer',
-              letterSpacing: '0.04em',
-            }}
+          <a
+            href="https://wa.me/256792170962"
+            className="btn-gold"
+            onClick={() => setMenuOpen(false)}
+            style={{ display: 'block', textAlign: 'center', padding: '14px 20px', fontSize: '15px' }}
           >
-            [DEV] Toggle: {isLoggedIn ? 'logged in' : 'logged out'}
-          </button>
+            💬 Get Free Quote
+          </a>
         </div>
       </div>
+
+      {/* Mobile backdrop */}
+      {menuOpen && (
+        <div
+          onClick={() => setMenuOpen(false)}
+          style={{
+            position: 'fixed',
+            inset: 0,
+            background: 'rgba(0,0,0,0.5)',
+            zIndex: 299,
+          }}
+        />
+      )}
     </>
   );
 };

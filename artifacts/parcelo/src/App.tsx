@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Switch, Route, Router as WouterRouter } from 'wouter';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import VSL from './components/VSL';
@@ -11,9 +12,10 @@ import Brands from './components/Brands';
 import FAQ from './components/FAQ';
 import BottomCTA from './components/BottomCTA';
 import Footer from './components/Footer';
+import ForBusiness from './pages/ForBusiness';
 import './parcelo.css';
 
-function App() {
+function LandingPage() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -47,6 +49,17 @@ function App() {
       <BottomCTA />
       <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+      <Switch>
+        <Route path="/for-business" component={ForBusiness} />
+        <Route component={LandingPage} />
+      </Switch>
+    </WouterRouter>
   );
 }
 
