@@ -7,7 +7,8 @@ Personal shopping concierge landing page — lets Ugandans order anything from a
 - `pnpm --filter @workspace/parcelo run dev` — run the Parcelo frontend (Vite dev server)
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port auto-assigned)
 - `pnpm run typecheck` — full typecheck across all packages
-- No required env vars for the frontend (purely static landing page)
+- No product secrets required for the frontend (purely static landing page)
+- `PORT` and `BASE_PATH` — required at dev/build time, automatically provided by the Replit workflow
 - `VITE_LOGO_DEV_KEY` — optional, used by the Brands section for logo images
 
 ## Stack
