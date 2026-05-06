@@ -7,7 +7,7 @@ const MOCK_LOGGED_IN = false;
 const NAV_LINKS = [
   { label: 'Tracking', href: '#tracking' },
   { label: 'For Business', href: '/for-business' },
-  { label: 'Login', href: '#login' },
+  { label: 'Login', href: '/login' },
 ];
 
 const Nav = () => {

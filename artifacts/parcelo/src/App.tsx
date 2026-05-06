@@ -13,6 +13,7 @@ import FAQ from './components/FAQ';
 import BottomCTA from './components/BottomCTA';
 import Footer from './components/Footer';
 import ForBusiness from './pages/ForBusiness';
+import Login from './pages/Login';
 import './parcelo.css';
 
 function LandingPage() {
@@ -57,6 +58,7 @@ function App() {
     <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <Switch>
         <Route path="/for-business" component={ForBusiness} />
+        <Route path="/login" component={Login} />
         <Route component={LandingPage} />
       </Switch>
     </WouterRouter>
