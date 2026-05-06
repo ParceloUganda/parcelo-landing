@@ -52,8 +52,8 @@ const Footer = () => {
               Get in Touch
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>💬 +256 700 000 000</div>
-              <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>✉️ hello@parcelo.ug</div>
+              <a href="tel:+256792170962" style={{ fontSize: '13px', color: 'var(--text-muted)', textDecoration: 'none' }}>💬 +256 792 170 962</a>
+              <a href="mailto:info@parcelo.ug" style={{ fontSize: '13px', color: 'var(--text-muted)', textDecoration: 'none' }}>✉️ info@parcelo.ug</a>
               <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>📍 Kampala, Uganda</div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
           gap: '16px'
         }}>
           <div style={{ fontSize: '12px', color: 'var(--text-faint)' }}>
-            © 2025 Parcelo. All rights reserved.
+            © 2026 Parcelo. All rights reserved.
           </div>
           <div style={{ display: 'flex', gap: '16px' }}>
             {['Privacy', 'Terms', 'Cookies'].map(link => (
