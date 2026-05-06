@@ -213,6 +213,56 @@ export default function ForBusiness() {
         </div>
       </section>
 
+      {/* ── SOCIAL PROOF STRIP ── */}
+      <section style={{ padding: '0 24px 64px' }}>
+        <div style={{ maxWidth: 'var(--container)', margin: 'auto' }}>
+          <div style={{
+            border: '1px solid var(--border)',
+            borderRadius: '16px',
+            padding: '28px 40px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '32px',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            background: 'var(--surface)',
+          }}>
+            <p style={{
+              fontSize: '15px',
+              fontWeight: 700,
+              color: 'var(--text-muted)',
+              margin: 0,
+              whiteSpace: 'nowrap',
+              letterSpacing: '0.01em',
+            }}>
+              Trusted by businesses across
+            </p>
+            <div style={{ width: '1px', height: '32px', background: 'var(--border)', flexShrink: 0 }} className="divider-hide" />
+            {[
+              { icon: '💄', label: 'Beauty & Health' },
+              { icon: '🍽️', label: 'Hospitality' },
+              { icon: '🏗️', label: 'Construction' },
+              { icon: '👗', label: 'Fashion' },
+              { icon: '📱', label: 'Electronics' },
+              { icon: '🚗', label: 'Auto' },
+            ].map(({ icon, label }) => (
+              <div key={label} style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
+                fontSize: '14px',
+                fontWeight: 600,
+                color: 'var(--text)',
+                opacity: 0.8,
+              }}>
+                <span style={{ fontSize: '18px' }}>{icon}</span>
+                {label}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── WHY PARTNER ── */}
       <section style={{ padding: '0 24px 72px' }}>
         <div style={{ maxWidth: 'var(--container)', margin: 'auto' }}>
@@ -238,7 +288,7 @@ export default function ForBusiness() {
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
+            gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '20px',
           }} className="why-grid">
             {[
@@ -251,11 +301,6 @@ export default function ForBusiness() {
                 icon: '🚚',
                 title: 'Reliable Fulfillment',
                 body: 'Track every order in real-time from the moment we buy it to the moment it arrives at your door.',
-              },
-              {
-                icon: '🛡️',
-                title: 'Quality Guaranteed',
-                body: 'Our expert buyers verify suppliers and inspect every product before purchase to ensure you receive exactly what you need.',
               },
               {
                 icon: '🎧',
