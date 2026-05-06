@@ -7,9 +7,9 @@ Personal shopping concierge landing page — lets Ugandans order anything from a
 - `pnpm --filter @workspace/parcelo run dev` — run the Parcelo frontend (Vite dev server)
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port auto-assigned)
 - `pnpm run typecheck` — full typecheck across all packages
-- No product secrets required for the frontend (purely static landing page)
 - `PORT` and `BASE_PATH` — required at dev/build time, automatically provided by the Replit workflow
 - `VITE_LOGO_DEV_KEY` — optional, used by the Brands section for logo images
+- `RESEND_API_KEY` — **required** on the API server for the `/for-business` form to email `business@parcelo.ug`. Get a free key at resend.com. Replit Resend connector (ccfg_resend_01K69QKYK789WN202XSE3QS17V) was dismissed by user — store as a manual secret instead.
 
 ## Stack
 
@@ -27,12 +27,13 @@ Personal shopping concierge landing page — lets Ugandans order anything from a
 - `artifacts/parcelo/src/components/` — all landing page sections (Nav, Hero, VSL, Marquee, Problem, HowItWorks, Testimonials, Pricing, Brands, FAQ, BottomCTA, Footer)
 - `artifacts/parcelo/src/parcelo.css` — brand CSS custom properties (colors, animations, responsive breakpoints)
 - `artifacts/parcelo/public/` — static assets (parcelo-logo.png, opengraph.jpg, favicon.svg)
-- `artifacts/api-server/` — Express API scaffold (unused by landing page)
+- `artifacts/api-server/` — Express API; `src/routes/business-application.ts` handles form → email via Resend
 - `lib/api-spec/openapi.yaml` — API spec (scaffold only)
 
 ## Architecture decisions
 
-- **Frontend-only landing page** — no backend or database needed; all sections are static React components
+- **API server now active** — `/api/business-application` (POST) receives For Business form data and emails `business@parcelo.ug` via Resend; served at path `/api` (port 8080)
+- **Frontend-only landing page** — main landing page sections are static React components
 - **CSS custom properties** for theming (`--bg`, `--gold`, `--text`, `--surface`, etc.) via `parcelo.css` — dark mode by default, light mode via `body.light` class
 - **IntersectionObserver** for scroll-triggered `fade-up` animations (in App.tsx `useEffect`)
 - **WhatsApp deep links** (`wa.me/256792170962`) are the primary CTA throughout the page

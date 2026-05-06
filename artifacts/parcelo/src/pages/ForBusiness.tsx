@@ -561,8 +561,22 @@ export default function ForBusiness() {
                 </div>
 
                 {/* Submit */}
+                {submitError && (
+                  <div style={{
+                    padding: '12px 16px',
+                    background: 'rgba(192,80,80,0.1)',
+                    border: '1px solid rgba(192,80,80,0.35)',
+                    borderRadius: '10px',
+                    fontSize: '14px',
+                    color: '#e07070',
+                  }}>
+                    {submitError}
+                  </div>
+                )}
+
                 <button
                   type="submit"
+                  disabled={submitting}
                   className="btn-gold"
                   style={{
                     width: '100%',
@@ -571,9 +585,11 @@ export default function ForBusiness() {
                     borderRadius: '12px',
                     marginTop: '4px',
                     fontFamily: 'Manrope, sans-serif',
+                    opacity: submitting ? 0.7 : 1,
+                    cursor: submitting ? 'not-allowed' : 'pointer',
                   }}
                 >
-                  Submit Business Application →
+                  {submitting ? 'Submitting…' : 'Submit Business Application →'}
                 </button>
 
                 <p style={{ fontSize: '12px', color: 'var(--text-faint)', textAlign: 'center', margin: 0, lineHeight: 1.6 }}>
