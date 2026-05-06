@@ -262,71 +262,66 @@ export default function Tracking() {
                   <h3 style={{ fontSize: '14px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--text-muted)', margin: '0 0 28px' }}>
                     Shipment Progress
                   </h3>
-                  <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', position: 'relative' }} className="tracking-steps">
-                    {/* connector line */}
-                    <div style={{
-                      position: 'absolute',
-                      top: '20px',
-                      left: '10%',
-                      right: '10%',
-                      height: '2px',
-                      background: 'var(--border)',
-                      zIndex: 0,
-                    }} />
-                    <div style={{
-                      position: 'absolute',
-                      top: '20px',
-                      left: '10%',
-                      width: `${Math.max(0, (activeIdx / (STEPS.length - 1)) * 80)}%`,
-                      height: '2px',
-                      background: 'var(--gold)',
-                      zIndex: 1,
-                      transition: 'width 0.6s ease',
-                    }} />
-
+                  <div style={{ display: 'flex', alignItems: 'flex-start' }} className="tracking-steps">
                     {STEPS.map((step, i) => {
                       const done = i <= activeIdx;
                       const active = i === activeIdx;
+                      const segmentDone = i < activeIdx;
                       return (
-                        <div key={step.id} style={{
-                          display: 'flex',
-                          flexDirection: 'column',
-                          alignItems: 'center',
-                          gap: '10px',
-                          flex: 1,
-                          position: 'relative',
-                          zIndex: 2,
-                        }}>
+                        <React.Fragment key={step.id}>
+                          {/* Step node */}
                           <div style={{
-                            width: '40px',
-                            height: '40px',
-                            borderRadius: '50%',
-                            background: done ? (active ? 'var(--gold)' : 'rgba(251,202,12,0.15)') : 'var(--surface)',
-                            border: `2px solid ${done ? 'var(--gold)' : 'var(--border-mid)'}`,
                             display: 'flex',
+                            flexDirection: 'column',
                             alignItems: 'center',
-                            justifyContent: 'center',
-                            fontSize: active ? '18px' : '16px',
-                            transition: 'all 0.3s',
-                            boxShadow: active ? '0 0 0 4px rgba(251,202,12,0.15)' : 'none',
+                            gap: '10px',
+                            flexShrink: 0,
                           }}>
-                            {done && !active ? (
-                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                            ) : (
-                              <span style={{ filter: done ? 'none' : 'grayscale(1)', opacity: done ? 1 : 0.4 }}>{step.icon}</span>
-                            )}
+                            <div style={{
+                              width: '40px',
+                              height: '40px',
+                              borderRadius: '50%',
+                              background: active ? 'var(--gold)' : done ? 'rgba(251,202,12,0.12)' : 'var(--surface)',
+                              border: `2px solid ${done ? 'var(--gold)' : 'var(--border-mid)'}`,
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              fontSize: '16px',
+                              transition: 'all 0.3s',
+                              boxShadow: active ? '0 0 0 4px rgba(251,202,12,0.15)' : 'none',
+                              position: 'relative',
+                              zIndex: 1,
+                            }}>
+                              {done && !active ? (
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                              ) : (
+                                <span style={{ filter: done ? 'none' : 'grayscale(1)', opacity: done ? 1 : 0.35 }}>{step.icon}</span>
+                              )}
+                            </div>
+                            <span style={{
+                              fontSize: '11px',
+                              fontWeight: active ? 700 : 600,
+                              color: active ? 'var(--gold)' : done ? 'var(--text-muted)' : 'var(--text-faint)',
+                              textAlign: 'center',
+                              lineHeight: 1.3,
+                              maxWidth: '64px',
+                            }}>
+                              {step.label}
+                            </span>
                           </div>
-                          <span style={{
-                            fontSize: '11px',
-                            fontWeight: active ? 700 : 600,
-                            color: active ? 'var(--gold)' : done ? 'var(--text-muted)' : 'var(--text-faint)',
-                            textAlign: 'center',
-                            lineHeight: 1.3,
-                            maxWidth: '70px',
-                          }}>
-                            {step.label}
-                          </span>
-                        </div>
+
+                          {/* Connector segment between this step and the next */}
+                          {i < STEPS.length - 1 && (
+                            <div style={{
+                              flex: 1,
+                              height: '2px',
+                              background: segmentDone ? 'var(--gold)' : 'var(--border-mid)',
+                              marginTop: '19px',
+                              transition: 'background 0.3s',
+                              minWidth: '8px',
+                            }} />
+                          )}
+                        </React.Fragment>
                       );
                     })}
                   </div>
