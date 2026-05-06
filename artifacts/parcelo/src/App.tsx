@@ -14,6 +14,7 @@ import BottomCTA from './components/BottomCTA';
 import Footer from './components/Footer';
 import ForBusiness from './pages/ForBusiness';
 import Login from './pages/Login';
+import Tracking from './pages/Tracking';
 import './parcelo.css';
 
 function LandingPage() {
@@ -57,6 +58,7 @@ function App() {
   return (
     <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <Switch>
+        <Route path="/tracking" component={Tracking} />
         <Route path="/for-business" component={ForBusiness} />
         <Route path="/login" component={Login} />
         <Route component={LandingPage} />

@@ -5,7 +5,7 @@ import { Link, useLocation } from 'wouter';
 const MOCK_LOGGED_IN = false;
 
 const NAV_LINKS = [
-  { label: 'Tracking', href: '#tracking' },
+  { label: 'Tracking', href: '/tracking' },
   { label: 'For Business', href: '/for-business' },
   { label: 'Login', href: '/login' },
 ];
