@@ -238,14 +238,14 @@ export default function ForBusiness() {
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+            gridTemplateColumns: 'repeat(2, 1fr)',
             gap: '20px',
           }} className="why-grid">
             {[
               {
-                icon: '📉',
-                title: 'Save 30–40% on Sourcing',
-                body: 'Access wholesale pricing and bulk sourcing discounts that dramatically reduce your import costs.',
+                icon: '🧾',
+                title: 'Know Your Costs Upfront',
+                body: 'Get a clear upfront estimate of purchase, freight, and clearance costs combined for sharper financial planning.',
               },
               {
                 icon: '🚚',
@@ -258,19 +258,9 @@ export default function ForBusiness() {
                 body: 'Our expert buyers verify suppliers and inspect every product before purchase to ensure you receive exactly what you need.',
               },
               {
-                icon: '⏱️',
-                title: 'Faster Processing',
-                body: 'Priority sourcing and handling for business accounts means your orders are purchased and cleared faster.',
-              },
-              {
                 icon: '🎧',
                 title: 'Dedicated Support',
                 body: 'Get a dedicated account manager who understands your business needs and provides personalized assistance.',
-              },
-              {
-                icon: '📦',
-                title: 'Flexible Ordering',
-                body: 'No minimum order requirements. Order as much or as little as you need when you need it.',
               },
             ].map(({ icon, title, body }) => (
               <div
@@ -583,9 +573,6 @@ export default function ForBusiness() {
       <Footer />
 
       <style>{`
-        @media (max-width: 900px) {
-          .why-grid { grid-template-columns: 1fr 1fr !important; }
-        }
         @media (max-width: 600px) {
           .why-grid { grid-template-columns: 1fr !important; }
           .form-row { grid-template-columns: 1fr !important; }
