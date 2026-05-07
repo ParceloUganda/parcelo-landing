@@ -72,6 +72,7 @@ const SECTIONS = [
   {
     title: 'Other restricted items',
     items: [
+      'Second-hand items or used electronics of any kind',
       'Counterfeit products',
       'Contraband or illegal substances',
       'Lottery tickets',
@@ -85,27 +86,13 @@ const SECTIONS = [
   },
 ];
 
-const UGANDA_NOTES = [
-  {
-    title: 'Used electronics are not allowed',
-    body: 'Uganda customs prohibits the import of used phones, laptops, tablets, and similar devices, regardless of where they are being sourced from. If you are looking at a phone or a laptop, it needs to be new. We will confirm this against the listing before any purchase goes through.',
-  },
-  {
-    title: 'TVs and monitors from the UK',
-    body: 'These are technically permitted, but UK retailers package them in oversized retail boxes that need specialist repacking before they can travel. We handle this automatically but it may add a small surcharge to your quote.',
-  },
-];
-
 function pad(n: number) {
   return String(n).padStart(2, '0');
 }
 
 export default function ProhibitedItems() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [openNote, setOpenNote] = useState<number | null>(null);
-
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
-  const toggleNote = (i: number) => setOpenNote(openNote === i ? null : i);
 
   return (
     <>
@@ -143,44 +130,6 @@ export default function ProhibitedItems() {
       <section style={{ padding: '0 24px 80px' }}>
         <div style={{ maxWidth: '720px', margin: 'auto', display: 'flex', flexDirection: 'column', gap: '32px' }}>
 
-          {/* Uganda-specific notes */}
-          <div style={{
-            background: 'rgba(251,202,12,0.05)',
-            border: '1px solid rgba(251,202,12,0.18)',
-            borderRadius: '16px',
-            padding: '24px 28px',
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '6px' }}>
-              <span style={{ fontSize: '16px' }}>🇺🇬</span>
-              <h2 style={{ fontSize: '14px', fontWeight: 800, margin: 0, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--gold)' }}>
-                Before You Order: Uganda-Specific Notes
-              </h2>
-            </div>
-            <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: '0 0 16px', lineHeight: 1.7 }}>
-              A few items are technically allowed to leave the US, UK, Dubai, or China but face additional rules on the Ugandan side.
-            </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {UGANDA_NOTES.map((note, i) => (
-                <div key={i} style={{ borderRadius: '10px', overflow: 'hidden', background: 'var(--surface)', border: '1px solid var(--border)' }}>
-                  <button
-                    onClick={() => toggleNote(i)}
-                    style={{
-                      width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                      padding: '14px 18px', background: 'none', border: 'none', cursor: 'pointer',
-                      color: 'var(--text)', fontSize: '14px', fontWeight: 600, textAlign: 'left', gap: '12px',
-                    }}
-                  >
-                    {note.title}
-                    <span style={{ color: 'var(--gold)', transform: openNote === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s', flexShrink: 0 }}>▾</span>
-                  </button>
-                  <div style={{ maxHeight: openNote === i ? '200px' : '0', overflow: 'hidden', transition: 'max-height 0.25s ease' }}>
-                    <p style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0, padding: '0 18px 16px' }}>{note.body}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Full list */}
           <div>
             <p style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-faint)', margin: '0 0 4px' }}>
@@ -190,7 +139,6 @@ export default function ProhibitedItems() {
               Items We Cannot Include in Your Order
             </h2>
 
-            {/* Accordion */}
             <div style={{ borderTop: '1px solid var(--border)' }}>
               {SECTIONS.map((section, i) => {
                 const isOpen = openIndex === i;
@@ -210,7 +158,6 @@ export default function ProhibitedItems() {
                         textAlign: 'left',
                       }}
                     >
-                      {/* Number badge */}
                       <span style={{
                         width: '36px',
                         height: '36px',
@@ -230,7 +177,6 @@ export default function ProhibitedItems() {
                         {pad(i + 1)}
                       </span>
 
-                      {/* Title */}
                       <span style={{
                         flex: 1,
                         fontSize: '16px',
@@ -241,7 +187,6 @@ export default function ProhibitedItems() {
                         {section.title}
                       </span>
 
-                      {/* Toggle icon */}
                       <span style={{
                         width: '32px',
                         height: '32px',
@@ -262,7 +207,6 @@ export default function ProhibitedItems() {
                       </span>
                     </button>
 
-                    {/* Expanded items */}
                     <div style={{
                       maxHeight: isOpen ? `${section.items.length * 52}px` : '0',
                       overflow: 'hidden',

@@ -99,15 +99,7 @@ button {
   transform: translateY(-1px); 
 }
 
-/* HERO GLOW */
-.hero-glow {
-  background: radial-gradient(ellipse 700px 500px at center, rgba(251,202,12,0.07), transparent);
-}
-@media (max-width: 900px) {
-  .hero-glow {
-    background: radial-gradient(ellipse 260px 220px at center, rgba(251,202,12,0.05), transparent);
-  }
-}
+/* HERO GLOW — removed intentionally, no yellow tint on background */
 
 /* ANIMATIONS */
 @keyframes marquee { 

@@ -2,18 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="fade-up" style={{ padding: '80px 0 64px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-      <div className="hero-glow" style={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '100%',
-        height: '100%',
-        pointerEvents: 'none',
-        zIndex: -1
-      }}></div>
-      
+    <section className="fade-up" style={{ padding: '80px 0 64px', textAlign: 'center' }}>
       <div style={{ maxWidth: 'var(--container)', margin: 'auto', padding: '0 var(--gutter)' }}>
         <div style={{ fontSize: '14px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '20px' }}>
           PERSONAL SHOPPING CONCIERGE · KAMPALA
