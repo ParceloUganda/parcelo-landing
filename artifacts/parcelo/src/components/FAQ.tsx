@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
+import { Link } from 'wouter';
+
+type FaqItem = {
+  q: string;
+  a: string;
+  link?: { href: string; label: string };
+};
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = [
+  const faqs: FaqItem[] = [
     {
       q: "How long does delivery take?",
       a: "Delivery typically takes 7–14 business days depending on the source country. UK and USA orders arrive in 10–14 days, Dubai orders in 7–10 days, and China orders in 10–21 days. We'll give you an accurate estimate with your quote."
@@ -23,6 +30,11 @@ const FAQ = () => {
     {
       q: "What if my item is lost or damaged?",
       a: "We take full responsibility for your order from the moment we purchase it. If an item is lost or arrives damaged, we will replace or refund it — no questions asked. That's our guarantee."
+    },
+    {
+      q: "Are there items you can't ship?",
+      a: "Yes — certain items are restricted or prohibited due to customs regulations and airline safety rules. This includes weapons, controlled substances, flammable goods, and certain food products. For the full list, see our Prohibited Items page.",
+      link: { href: '/prohibited-items', label: 'View Prohibited Items →' }
     }
   ];
 
@@ -86,6 +98,21 @@ const FAQ = () => {
               }}>
                 <div style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7 }}>
                   {faq.a}
+                  {faq.link && (
+                    <Link
+                      href={faq.link.href}
+                      style={{
+                        display: 'inline-block',
+                        marginTop: '10px',
+                        fontSize: '13px',
+                        fontWeight: 700,
+                        color: 'var(--gold)',
+                        textDecoration: 'none',
+                      }}
+                    >
+                      {faq.link.label}
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>

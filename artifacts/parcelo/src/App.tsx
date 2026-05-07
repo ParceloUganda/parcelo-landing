@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 import ForBusiness from './pages/ForBusiness';
 import Login from './pages/Login';
 import Tracking from './pages/Tracking';
+import ProhibitedItems from './pages/ProhibitedItems';
 import './parcelo.css';
 
 function LandingPage() {
@@ -61,6 +62,7 @@ function App() {
         <Route path="/tracking" component={Tracking} />
         <Route path="/for-business" component={ForBusiness} />
         <Route path="/login" component={Login} />
+        <Route path="/prohibited-items" component={ProhibitedItems} />
         <Route component={LandingPage} />
       </Switch>
     </WouterRouter>
