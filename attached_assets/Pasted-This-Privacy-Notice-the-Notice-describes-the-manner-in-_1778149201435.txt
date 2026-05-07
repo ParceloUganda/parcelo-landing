@@ -1,0 +1,181 @@
+This Privacy Notice (the “Notice”) describes the manner in which Parcelo Freight Solutions Limited (“Parcelo,” “we,” “us,” or “our”) collects, uses, processes, retains, transfers, and discloses information that you provide to us, that we collect, or that we receive in connection with your access to and use of our website located at parcelo.ug (the “Website”), our international shopping concierge services (the “Services”), and any related communications between you and Parcelo. This Notice also describes the security measures we implement to safeguard the Personal Information (defined below) you provide to us, and informs you of the rights you may exercise in relation to such Personal Information under the Data Protection and Privacy Act, 2019 of Uganda and the Data Protection and Privacy Regulations, 2021 (collectively, the “DPPA”).
+
+Registration with the Personal Data Protection Office of Uganda
+Parcelo is duly registered with the Personal Data Protection Office (the “PDPO”) under the DPPA.
+
+Registration Number: PDPO20260311148
+
+Registered Capacity: Data Collector, Data Processor, and Data Controller
+
+Date of Registration: 18 March 2026
+
+Contents
+About Parcelo
+Your Consent
+Changes to This Notice
+Information We Collect
+How We Use the Information
+Information Sharing and Disclosure
+Cookies and Analytics
+WhatsApp Communications
+International Transfers
+Data Retention
+Your Rights
+Data Protection Officer
+Security
+Adults Only
+Links to Third Party Websites
+Contact Us
+1. About Parcelo
+Parcelo Freight Solutions Limited is a company duly incorporated under the laws of the Republic of Uganda, with its registered office at Ruthent Towers, Bukoto Street, Plot 96A, Kampala, Uganda. Through the Services, Parcelo sources, purchases, and delivers goods from the United Kingdom, the United States of America, the United Arab Emirates, and the People’s Republic of China to clients located in Uganda. For the purposes of the DPPA, Parcelo is the data controller responsible for the processing of your Personal Information.
+
+2. Your Consent
+By accessing or using the Website, by engaging the Services, or by otherwise providing Personal Information to us, you acknowledge that you have read this Notice and consent to the collection, use, processing, retention, transfer, and disclosure of your Personal Information in accordance with the terms set out herein. If you do not agree with any provision of this Notice, you must not access or use the Website or the Services.
+
+3. Changes to This Notice
+Parcelo reserves the right to modify this Notice from time to time. Any modifications will become effective upon being posted to the Website. Where we make material changes, we will notify you by conspicuously posting a notice on the Website and, where we consider it appropriate, by direct communication via email or WhatsApp prior to such changes taking effect. Each version of this Notice will be marked with the date on which it was last updated. Your continued use of the Website or the Services following the posting of changes constitutes your acceptance of those changes. You are responsible for periodically reviewing this Notice to remain informed of its current terms.
+
+4. Information We Collect
+We collect several categories of information from and about you when you access and use the Website and the Services, as further described in this Section 4.
+
+4.1 Personal Information
+“Personal Information” means any information relating to an identified or identifiable natural person, in accordance with the definition prescribed by the DPPA. We may collect Personal Information directly from you, including when you:
+
+submit a quotation request, contact form, or sign-up form on the Website;
+register for an account or use the Services;
+communicate with us by email, WhatsApp, telephone, or any other channel; or
+otherwise provide Personal Information to us in the course of your relationship with Parcelo.
+The categories of Personal Information we typically collect include:
+
+your full name;
+your email address;
+your telephone number;
+your delivery address within Uganda;
+details of the goods you wish to source, including product descriptions, links, sizes, and preferences; and
+the contents of any messages, photographs, or other materials you transmit to us in connection with your enquiry or order.
+4.2 Non-Personal Information and Automatically Collected Information
+When you visit the Website, we may collect non-personal information automatically through the use of analytics tools, cookies, and similar technologies. We use PostHog, a third party product analytics provider, to assist us in understanding how the Website is used. The information collected through such means may include:
+
+the pages of the Website you visit and the time spent on each;
+the source from which you arrived at the Website, including referring URLs and search terms;
+your approximate geographic location, derived from your internet protocol (IP) address (typically at the country and city level);
+the type of device, operating system, and browser you use to access the Website; and
+your interactions with the Website, including clicks, scrolls, and form submissions.
+To the extent that any such information, alone or in combination with other information, identifies or could reasonably identify you, it shall be treated as Personal Information for the purposes of this Notice.
+
+4.3 Information We Do Not Collect through the Website
+For the avoidance of doubt, Parcelo does not, through the Website, collect:
+
+bank account numbers, payment card numbers, or other financial credentials, all of which are collected and processed directly by our payment partners (see Section 6.1);
+copies of identification documents, including the National Identification Number, passport, or driving licence; or
+Tax Identification Numbers (TINs).
+In the event that Parcelo extends the Services to registered businesses or otherwise begins to collect any information described in this Section 4.3, this Notice will be updated to reflect such collection, and the corresponding lawful basis will be communicated to you prior to or at the point of collection.
+
+5. How We Use the Information We Collect
+We collect, use, and process Personal Information for the following purposes:
+
+to respond to your enquiries, quotation requests, and other communications;
+to establish, administer, and maintain your account;
+to source, purchase, deliver, and otherwise fulfil the Services you have requested;
+to process payments and complete transactions in connection with the Services;
+to provide you with administrative communications, including order confirmations, payment notices, delivery updates, and account-related notifications;
+to operate, maintain, improve, and personalise the Website and the Services;
+to send you marketing communications and to invite you to participate in our WhatsApp communities, in each case only where you have provided opt-in consent;
+to comply with our legal, regulatory, customs, tax, accounting, and record-keeping obligations under applicable law;
+to enforce our terms of service, this Notice, and any other agreement entered into between you and Parcelo;
+to protect our rights, our staff, and the safety of our clients and the public;
+to investigate, prevent, or take action in respect of suspected fraud, illegal activity, or violations of our policies; and
+for any other purpose disclosed at the point of collection or to which you have otherwise consented.
+The lawful bases on which Parcelo processes your Personal Information under the DPPA include: (i) your consent; (ii) the performance of a contract to which you are a party, or in order to take steps at your request prior to entering into a contract; (iii) compliance with a legal obligation to which Parcelo is subject; (iv) the protection of your vital interests or those of another natural person; and (v) the legitimate interests pursued by Parcelo, except where such interests are overridden by your interests or fundamental rights and freedoms.
+
+6. Information Sharing and Disclosure to Third Parties
+Parcelo does not sell, rent, lease, or trade your Personal Information. We share your Personal Information only as described in this Notice or as otherwise permitted or required by applicable law.
+
+In the ordinary course of providing the Services, Parcelo purchases goods using its own accounts and forwarding facilities in the United Kingdom, the United States of America, the United Arab Emirates, and the People’s Republic of China, and accordingly your Personal Information is generally not disclosed to overseas retailers, suppliers, or forwarding agents in the course of sourcing or in-bound logistics.
+
+We may share or disclose your Personal Information in the following circumstances:
+
+6.1 Payment Partners
+When you make a payment in connection with the Services, your payment information is collected and processed directly by the following third party payment service providers:
+
+Pesapal Limited (in respect of card and bank payments);
+MTN Mobile Money; and
+Airtel Money.
+The processing of your payment information by these third parties is governed by their respective privacy policies, which you are encouraged to review. Parcelo does not store your payment card or mobile money credentials on its systems and receives only confirmation of the payment from the relevant payment partner.
+
+6.2 Government, Regulators, and Compliance
+Parcelo may share Personal Information with the Uganda Revenue Authority for the purposes of customs declarations and tax compliance, and with other governmental, regulatory, or judicial authorities where Parcelo is required or permitted by applicable law to do so.
+
+6.3 Legal Process and Protection of Rights
+Parcelo may disclose Personal Information where it considers, in good faith, that such disclosure is necessary to:
+
+comply with a court order, subpoena, search warrant, or other legal process;
+establish, exercise, or defend legal claims;
+enforce this Notice, our terms of service, or any other agreement;
+protect the rights, property, or safety of Parcelo, its employees, its clients, or the public; or
+investigate, prevent, or take action in respect of suspected fraud, illegal activity, or violations of policy.
+6.4 Service Providers
+Parcelo engages a limited number of third party service providers to assist with hosting, communications, analytics, and other operational functions. Such providers are granted access only to the Personal Information they require to perform their services on our behalf, and are bound by written agreements requiring them to maintain the confidentiality and security of such information and to process it only in accordance with our documented instructions and applicable law.
+
+6.5 Business Transactions
+In the event that Parcelo is involved in a merger, acquisition, divestiture, restructuring, reorganisation, dissolution, or sale of all or a portion of its assets, your Personal Information may be transferred to the successor or acquirer as part of such transaction. Where this occurs, Parcelo will provide notice on the Website and the recipient will be required to handle your Personal Information on terms no less protective than those set out in this Notice.
+
+7. Cookies and Analytics
+The Website uses cookies and similar tracking technologies provided by PostHog to facilitate the operation of the Website and to allow us to understand how visitors interact with it. You may disable cookies through your browser settings; however, doing so may impair the functionality of certain features of the Website. Parcelo does not use cookies to identify you personally on the Website, and we do not sell or share PostHog data with advertisers or third party marketing networks.
+
+8. WhatsApp Communications and Communities
+WhatsApp is the principal channel through which Parcelo communicates with its clients regarding the Services. By engaging Parcelo or otherwise providing your WhatsApp number to us, you acknowledge that we may send you transactional communications via WhatsApp, including quotation confirmations, payment instructions, and delivery updates, in connection with the Services you have requested.
+
+Parcelo may, from time to time, invite clients to opt in to its WhatsApp communities for the purpose of receiving marketing communications, special offers, news, and educational content. You will only be added to a WhatsApp community after you have provided express opt-in consent. You may withdraw such consent at any time by leaving the relevant WhatsApp community or by writing to privacy@parcelo.ug, in which case we will cease to send you marketing communications. The withdrawal of consent shall not affect the lawfulness of any processing carried out prior to such withdrawal.
+
+9. International Transfers
+Certain of the third party providers we engage, including PostHog and our hosting partners, process Personal Information on infrastructure located outside Uganda. Where we transfer your Personal Information outside Uganda, we take reasonable steps to ensure that the recipient affords your Personal Information a level of protection equivalent to that required under the DPPA, including by way of contractual safeguards. By providing your Personal Information to Parcelo, you acknowledge that such transfers may take place for the purposes described in this Notice.
+
+10. Data Retention
+Parcelo retains your Personal Information for a period of seven (7) years from the date of your last order or interaction with us, in order to satisfy our customs, tax, accounting, and other legal record-keeping obligations under Ugandan law. Following the expiry of this period, we will delete or anonymise your Personal Information, save to the extent we are required by law to retain it for a longer period.
+
+Where you request the earlier deletion of your Personal Information in accordance with Section 11, Parcelo will comply with such request to the extent we are not legally required to retain the information, and we will inform you of the categories of information (if any) that we are required to retain and the basis for such retention.
+
+11. Your Rights under Ugandan Data Protection Law
+Subject to the limitations and qualifications set out in the DPPA, you have the following rights in respect of your Personal Information:
+
+the right to be informed of the manner in which your Personal Information is processed (which this Notice serves to address);
+the right of access to the Personal Information we hold about you;
+the right to request the rectification of inaccurate or incomplete Personal Information;
+the right to request the erasure of your Personal Information, subject to any legal obligation requiring us to retain such information;
+the right to object to the processing of your Personal Information, including for direct marketing purposes;
+the right to withdraw any consent you have previously given to the processing of your Personal Information, without affecting the lawfulness of processing carried out prior to such withdrawal;
+the right to data portability, in accordance with applicable law; and
+the right to lodge a complaint with the Personal Data Protection Office of Uganda where you consider that we have failed to comply with our obligations under the DPPA.
+To exercise any of these rights, please contact us at privacy@parcelo.ug. We will respond to your request within the timeframes prescribed by applicable law. Parcelo will not charge a fee for the reasonable exercise of these rights, save where a request is manifestly unfounded, excessive, or repetitive, in which case we may charge a reasonable fee or refuse to act on the request, as permitted by law.
+
+Before responding to a request, we may take reasonable steps to verify your identity in order to protect the security and confidentiality of your Personal Information.
+
+12. Data Protection Officer
+Parcelo has appointed a Data Protection Officer responsible for overseeing compliance with this Notice and applicable data protection law. The Data Protection Officer may be contacted by writing to privacy@parcelo.ug.
+
+13. Security
+Parcelo implements technical, organisational, and administrative measures designed to protect Personal Information against unauthorised access, use, disclosure, alteration, loss, or destruction. These measures include, without limitation, access controls, role-based permissions, staff training on data handling, and periodic review of our practices.
+
+Notwithstanding our efforts, no method of transmission over the internet or method of electronic storage is entirely secure, and Parcelo cannot guarantee the absolute security of your Personal Information. The security of your Personal Information also depends in part on you. You are responsible for maintaining the confidentiality of your account credentials and for restricting access to your devices. If you have reason to believe that your account or your Personal Information has been compromised, please contact us immediately at privacy@parcelo.ug.
+
+14. Adults Only
+The Services are intended solely for use by individuals who are eighteen (18) years of age or older. By registering an account, requesting a quotation, or otherwise using the Services, you represent and confirm that you are at least eighteen (18) years of age. Parcelo does not knowingly collect Personal Information from individuals under the age of eighteen (18). If you become aware that Personal Information of a person under the age of eighteen (18) has been provided to Parcelo, please contact us at privacy@parcelo.ug and we will take appropriate steps to delete such information.
+
+15. Links to Third Party Websites
+The Website may contain links to third party websites, including those of overseas retailers and partners in the United Kingdom, the United States of America, the United Arab Emirates, and the People’s Republic of China. Parcelo does not control such third party websites and is not responsible for their content, practices, or privacy policies. We encourage you to review the privacy policies of any third party website before providing your Personal Information to such third party.
+
+16. Contact Us
+For any questions, requests, or concerns regarding this Notice or our handling of your Personal Information, you may contact us at:
+
+Parcelo Freight Solutions Limited
+
+Ruthent Towers, Bukoto Street, Plot 96A
+
+Kampala, Uganda
+
+Email: privacy@parcelo.ug
+
+Web: parcelo.ug
+
+If you are not satisfied with our response, you have the right to lodge a complaint with the Personal Data Protection Office of Uganda. Information regarding the lodging of complaints is available on the PDPO’s website.
