@@ -3,99 +3,60 @@ import React, { useState } from 'react';
 const LOGO_KEY = import.meta.env.VITE_LOGO_DEV_KEY;
 
 const companies: { name: string; domain: string }[] = [
-  { name: 'Stanbic Bank',      domain: 'stanbic.com' },
-  { name: 'ABSA',              domain: 'absa.com' },
-  { name: 'Bank of Uganda',    domain: 'bou.or.ug' },
-  { name: 'NSSF Uganda',       domain: 'nssfug.org' },
-  { name: 'Marsh',             domain: 'marsh.com' },
-  { name: 'PwC',               domain: 'pwc.com' },
-  { name: 'MTN Uganda',        domain: 'mtn.com' },
-  { name: 'Airtel Uganda',     domain: 'airtel.com' },
-  { name: 'Next Media',        domain: 'nextmedia.co.ug' },
-  { name: 'New Vision',        domain: 'newvision.co.ug' },
-  { name: 'Uganda Airlines',   domain: 'ugandaairlines.co.ug' },
-  { name: 'Emirates',          domain: 'emirates.com' },
-  { name: 'TotalEnergies',     domain: 'totalenergies.com' },
-  { name: 'Café Javas',        domain: 'cafejavas.com' },
-  { name: 'Coca-Cola',         domain: 'coca-cola.com' },
-  { name: 'Serena Hotels',     domain: 'serenahotels.com' },
+  { name: 'Stanbic Bank',    domain: 'stanbic.com' },
+  { name: 'ABSA',            domain: 'absa.com' },
+  { name: 'Bank of Uganda',  domain: 'bou.or.ug' },
+  { name: 'NSSF Uganda',     domain: 'nssfug.org' },
+  { name: 'Marsh',           domain: 'marsh.com' },
+  { name: 'PwC',             domain: 'pwc.com' },
+  { name: 'MTN Uganda',      domain: 'mtn.com' },
+  { name: 'Airtel Uganda',   domain: 'airtel.com' },
+  { name: 'Next Media',      domain: 'nextmedia.co.ug' },
+  { name: 'New Vision',      domain: 'newvision.co.ug' },
+  { name: 'Uganda Airlines', domain: 'ugandaairlines.co.ug' },
+  { name: 'Emirates',        domain: 'emirates.com' },
+  { name: 'TotalEnergies',   domain: 'totalenergies.com' },
+  { name: 'Café Javas',      domain: 'cafejavas.com' },
+  { name: 'Coca-Cola',       domain: 'coca-cola.com' },
+  { name: 'Serena Hotels',   domain: 'serenahotels.com' },
 ];
 
-function logoUrl(domain: string) {
-  if (LOGO_KEY) {
-    return `https://img.logo.dev/${domain}?token=${LOGO_KEY}&size=128&format=png`;
-  }
-  return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
-}
+function LogoItem({ name, domain }: { name: string; domain: string }) {
+  const [hidden, setHidden] = useState(false);
 
-function LogoCard({ name, domain }: { name: string; domain: string }) {
-  const [errored, setErrored] = useState(false);
+  if (hidden) return null;
+
+  const src = LOGO_KEY
+    ? `https://img.logo.dev/${domain}?token=${LOGO_KEY}&size=80&format=png`
+    : `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
 
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      gap: '10px',
-      padding: '20px 16px',
-      borderRadius: '14px',
-      border: '1px solid var(--border)',
-      background: 'var(--surface)',
-      transition: 'border-color 0.2s, transform 0.2s',
-      cursor: 'default',
-      minWidth: 0,
-    }}
-      onMouseOver={e => {
-        (e.currentTarget as HTMLElement).style.borderColor = 'var(--border-mid)';
-        (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
+    <div
+      title={name}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexShrink: 0,
+        opacity: 0.65,
+        transition: 'opacity 0.2s',
       }}
-      onMouseOut={e => {
-        (e.currentTarget as HTMLElement).style.borderColor = 'var(--border)';
-        (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
-      }}
+      onMouseOver={e => ((e.currentTarget as HTMLElement).style.opacity = '1')}
+      onMouseOut={e => ((e.currentTarget as HTMLElement).style.opacity = '0.65')}
     >
-      {!errored ? (
-        <img
-          src={logoUrl(domain)}
-          alt={name}
-          onError={() => setErrored(true)}
-          style={{
-            width: '40px',
-            height: '40px',
-            objectFit: 'contain',
-            borderRadius: '8px',
-            display: 'block',
-          }}
-        />
-      ) : (
-        <div style={{
-          width: '40px',
-          height: '40px',
-          borderRadius: '8px',
-          background: 'var(--surface-mid)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontSize: '14px',
-          fontWeight: 800,
-          color: 'var(--text-muted)',
-        }}>
-          {name.charAt(0)}
-        </div>
-      )}
-      <span style={{
-        fontSize: '12px',
-        fontWeight: 600,
-        color: 'var(--text-muted)',
-        textAlign: 'center',
-        lineHeight: 1.3,
-        whiteSpace: 'nowrap',
-        overflow: 'hidden',
-        textOverflow: 'ellipsis',
-        maxWidth: '100%',
-      }}>
-        {name}
-      </span>
+      <img
+        src={src}
+        alt={name}
+        onError={() => setHidden(true)}
+        style={{
+          height: '28px',
+          width: 'auto',
+          maxWidth: '80px',
+          objectFit: 'contain',
+          display: 'block',
+          filter: 'brightness(0) invert(1)',
+        }}
+      />
     </div>
   );
 }
@@ -109,7 +70,7 @@ const Marquee = () => {
           fontWeight: 700,
           letterSpacing: '0.14em',
           textTransform: 'uppercase',
-          color: 'var(--gold)',
+          color: 'var(--text-faint)',
           textAlign: 'center',
           marginBottom: '28px',
         }}>
@@ -117,14 +78,15 @@ const Marquee = () => {
         </div>
 
         <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(8, 1fr)',
-          gap: '12px',
-        }}
-          className="logo-grid"
-        >
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '40px',
+          flexWrap: 'wrap',
+          rowGap: '20px',
+        }}>
           {companies.map(c => (
-            <LogoCard key={c.domain} name={c.name} domain={c.domain} />
+            <LogoItem key={c.domain} name={c.name} domain={c.domain} />
           ))}
         </div>
       </div>
