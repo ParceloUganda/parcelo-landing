@@ -1,0 +1,337 @@
+
+PARCELO FREIGHT SOLUTIONS LIMITED
+
+Terms of Use
+
+The agreement between Parcelo Freight Solutions Limited and any person or organisation who requests, uses, or pays for our Concierge and Fulfilment Service.
+
+DOCUMENT REFERENCE
+PCL-LEGAL-TOU-26-001	VERSION
+v0.1 (Draft)
+EFFECTIVE DATE
+[To be confirmed]	LAST UPDATED
+[To be confirmed]
+OWNER
+Managing Director, Parcelo Freight Solutions Limited	STATUS
+Draft for legal review
+
+DRAFT FOR LEGAL REVIEW.
+This draft has been prepared for review by Parcelo's retained legal partner before publication. It is not yet effective and should not be relied on by any third party. Placeholders shown in square brackets are to be confirmed before sign-off. References to specific Ugandan statutes (including the Contract Act, the Data Protection and Privacy Act 2019, and any anti-money laundering obligations under the Anti-Money Laundering Act 2013) are to be reviewed and confirmed by counsel.
+
+Contents
+1.  Acceptance and Amendment
+2.  Definitions
+3.  The Service
+4.  Eligibility and Account
+5.  Communication Channels and Order Placement
+6.  Pricing, Fees, Payment, and Currency
+7.  Authority to Purchase on Your Behalf
+8.  Restricted and Prohibited Items
+9.  Customs, Duties, and Taxes
+10.  Delivery, Timelines, and Authorised Recipients
+11.  Loss, Damage, Vendor Errors, and Replacement
+12.  Limitation of Liability
+13.  Client Warranties and Indemnity
+14.  Intellectual Property
+15.  Privacy and Data Protection
+16.  Force Majeure
+17.  Suspension and Termination
+18.  Governing Law and Dispute Resolution
+19.  Entire Agreement, Severability, Waiver, and Assignment
+20.  Contact and Notices
+
+1.  Acceptance and Amendment
+1.1  These Terms of Use (“Terms”) govern the relationship between Parcelo Freight Solutions Limited (“Parcelo”, “we”, “us”, “our”) and any person or entity (“Client”, “you”, “your”) who requests, uses, or pays for any service offered by Parcelo, whether through our WhatsApp channel, our website, our team in person, or any other communication channel we operate from time to time.
+1.2  You accept these Terms when any of the following occurs:
+(a)  you confirm a Quotation we have issued to you;
+(b)  you pay the full landed cost, or any other amount, in connection with an Order;
+(c)  you authorise us in writing, by message, or by voice note to source, purchase, or deliver Goods on your behalf; or
+(d)  you continue to use our Service after we have notified you that the Terms have been updated.
+1.3  If you are placing an Order on behalf of an organisation, you confirm that you have the authority to bind that organisation, and references to “you” in these Terms include that organisation.
+1.4  We may amend these Terms from time to time. When we do, we will publish the updated version on our website and notify active Clients through our usual communication channels. The Last Updated date at the top of this document tells you when the most recent change took effect. If you do not agree with a change, you may close your account or stop using our Service before placing any new Order. Continued use of our Service after the Last Updated date confirms your acceptance of the updated Terms.
+1.5  In the event of a conflict between these Terms and any individual Quotation, invoice, or written agreement we have signed with you, the more recent and specifically negotiated document will prevail for that engagement.
+2.  Definitions
+In these Terms, the following words carry the meanings set out below.
+"Concierge Service" or “Service” means the end to end service Parcelo provides, including sourcing, negotiating, purchasing, consolidating, transporting, clearing, and delivering Goods from a Source Country to a Client in Uganda.
+"Concierge and Fulfilment Fee" means the fee charged by Parcelo for the Service, calculated as twelve per cent (12%) of the costs in clause 6.1(a) to (d), or such other fee as is specifically agreed in writing for a particular Order.
+"Client, you, or your" means the person or organisation requesting or receiving the Service.
+"Delivery" means the handover of Goods to the Client at the agreed delivery point in Uganda, or to a person nominated by the Client at that point.
+"ETA" means the Estimated Time of Arrival for Delivery stated in a Quotation.
+"Goods or Items" means the products that the Client has requested Parcelo to source, purchase, and deliver.
+"Order" means a request from a Client that has been confirmed by issue of a Receipt following payment of the full landed cost, after which Parcelo is engaged to perform the Service for those specific Goods.
+"Parcelo, we, us, or our" means Parcelo Freight Solutions Limited, a company incorporated under the laws of Uganda with company registration number [–] and TIN [–], having its registered office at [–], Kampala, Uganda.
+"Prohibited Items" means Goods that Parcelo will not source, purchase, or deliver under any circumstances, as set out in clause 8 and as updated from time to time.
+"Quotation" means a written estimate issued by Parcelo through WhatsApp, email, or our website, that sets out the proposed Goods, total landed cost, and ETA for a particular request.
+"Receipt" means the formal document Parcelo issues on successful receipt of full payment, confirming Order creation.
+"Restricted Items" means Goods that Parcelo may agree to handle only on additional terms, as set out in clause 8.
+"Source Country" means the country from which Goods are sourced, currently the United Kingdom, the United States of America, the United Arab Emirates, and the People's Republic of China, and any other country we may add to our Service from time to time.
+"Verified Channel" means a communication channel that Parcelo has verified with the relevant provider and registered to Parcelo Freight Solutions Limited, as set out in clause 5.1.
+"Working Day" means any day from Monday to Friday, excluding public holidays observed in Uganda.
+3.  The Service
+3.1  Parcelo operates a premium international shopping concierge service. We source, purchase, consolidate, transport, clear, and deliver Goods from approved Source Countries to Clients in Uganda.
+3.2  What the Service includes. The Service typically covers the following activities for each Order:
+(a)  researching and identifying suitable suppliers in the Source Country;
+(b)  preparing a Quotation that captures the total landed cost and ETA;
+(c)  purchasing the Goods from the supplier in Parcelo's name and using Parcelo's payment instruments, as further described in clause 7;
+(d)  receiving the Goods at our overseas consolidation facility;
+(e)  arranging international transport to Uganda;
+(f)  handling customs clearance with the Uganda Revenue Authority and any other competent authority; and
+(g)  arranging last-mile Delivery to your registered address.
+3.3  What the Service does not include. The Service does not include legal advice, tax advice, advice on the suitability of any product for your purposes, after-sales support beyond Delivery, warranty servicing of branded Goods, or any service that is not expressly described in your Quotation.
+3.4  Concierge, not freight forwarder. Parcelo positions itself as a concierge and fulfilment partner, not as a regulated freight forwarder. Where we engage carriers, customs agents, or other third parties to perform parts of the Service, we do so as your concierge, on the terms set out in these Terms and in the relevant Quotation.
+3.5  Variations to the Service. We may from time to time add, modify, or retire elements of the Service, including adding or removing Source Countries, payment methods, or product categories. Material changes are notified through our Verified Channels. Changes do not retroactively affect Orders that have already been created.
+4.  Eligibility and Account
+4.1  By engaging Parcelo through any Verified Channel, you confirm that you are at least eighteen (18) years of age and have the legal capacity to enter into a binding contract under the laws of Uganda.
+4.2  Where you engage Parcelo on behalf of an organisation, you further confirm that the organisation is duly constituted under applicable law, and that you are authorised to bind it to these Terms.
+4.3  No documentary KYC at onboarding. For our Concierge Service to individual Clients (B2C), we do not collect identification documents, such as national identification cards or passports, at onboarding. Your age and capacity are confirmed by your engagement with us under clause 4.1.
+4.4  Right to request information. Notwithstanding clause 4.3, we may request reasonable information or documentation where:
+(a)  we are required to do so under applicable law, including any obligations arising under the Anti-Money Laundering Act 2013 or guidance issued by the Financial Intelligence Authority;
+(b)  an Order is of unusually high value or otherwise raises a reasonable concern;
+(c)  Goods of a category that requires permits, licences, or special clearances are involved; or
+(d)  we need to confirm authority where you have asked us to deliver to a person other than yourself.
+Your reasonable cooperation is a condition of our continued provision of the Service.
+4.5  Account information. You are responsible for keeping the contact information you provide to us, including your delivery address, your phone number, and any email address, accurate and current. We are entitled to rely on the most recent information we hold for you.
+4.6  One Client, one engagement. You may not use our Service for the purpose of resale to third parties on a commercial scale, multi-level marketing, money or value transmission, or any business practice that is easily subject to abuse or that is restricted under Ugandan law.
+5.  Communication Channels and Order Placement
+5.1  Verified Channels. Parcelo communicates with Clients only through business channels that we have verified with the relevant providers and that are registered to Parcelo Freight Solutions Limited. Our Verified Channels currently include:
+(a)  our WhatsApp Business line, verified by Meta;
+(b)  our LinkedIn business page, verified by LinkedIn;
+(c)  our official website at [domain to be confirmed];
+(d)  our official email domain at [domain to be confirmed]; and
+(e)  any further channels we may add and verify from time to time, which we will publish on our website.
+If you are contacted by any person claiming to represent Parcelo through a channel that is not on this list, that person is not authorised to act on our behalf. Do not share personal information, accept Quotations, or send payments on the basis of such communications. We accept no liability for losses arising from communications outside our Verified Channels. If you are ever uncertain, please contact us through any of the Verified Channels listed above to confirm.
+5.2  Stages of an engagement. Engaging Parcelo follows four stages:
+(a)  Request. You describe the Goods you would like sourced and delivered, through any of our Verified Channels.
+(b)  Quotation. We issue a written Quotation setting out the proposed Goods, the source, the total landed cost, and the ETA.
+(c)  Payment. If you wish to proceed, you pay the full landed cost using the methods set out in clause 6.
+(d)  Receipt and Order creation. On successful receipt of full payment, we issue you a Receipt, and the Order is created in our system. The Order is binding on both parties from the moment the Receipt is issued.
+5.3  No Order without a Receipt. A Quotation, however detailed, does not by itself create a binding obligation on either party. There is no Order, and we are under no obligation to source, purchase, or deliver any Goods, until full payment has been received and a Receipt issued.
+5.4  Quotation validity. Each Quotation is valid only on the Working Day on which it is issued. If payment is not received that day, the Quotation expires and any subsequent engagement requires a fresh Quotation. This protects both parties from foreign exchange movements and supplier price changes that occur from one day to the next.
+5.5  Pre-quote screening. Before we issue a Quotation, we check the requested Goods against our Restricted Items and Prohibited Items lists set out in clause 8. If we identify a problem at this stage, we will not issue a Quotation, and we will tell you why.
+5.6  Right to refuse after Order creation. In rare cases, after a Receipt has been issued, we may discover that the Goods are restricted, prohibited, or otherwise cannot lawfully or practically be delivered, for example where regulations have changed in the period between Quotation and dispatch. Where this happens:
+(a)  we will notify you promptly through your registered channel;
+(b)  we will refund all amounts paid that have not been irrecoverably committed to a supplier, carrier, or other third party on your behalf; and
+(c)  where amounts have been committed to a third party, we will use reasonable efforts to recover them, and we will refund whatever is recovered.
+This is in addition to our rights of suspension and termination under clause 17.
+5.7  Sourcing timeline. On Order creation, we will use reasonable endeavours to commence sourcing on the same Working Day. Where we are unable to do so for reasons within our control, that delay is at our risk, and it does not change the Goods, prices, or delivery commitments set out in your Quotation and Receipt.
+6.  Pricing, Fees, Payment, and Currency
+6.1  Landed cost. Each Quotation states a single total landed cost, which is the only amount you pay to receive the Goods at your agreed delivery point. The landed cost covers:
+(a)  the purchase price of the Goods at source, including any taxes, duties, or fees charged by the source vendor or source country;
+(b)  international transport from the Source Country to Uganda;
+(c)  clearance and any duties or taxes payable in Uganda, including those payable to the Uganda Revenue Authority;
+(d)  last-mile Delivery to your agreed delivery point in Uganda; and
+(e)  the Concierge and Fulfilment Fee.
+6.2  Concierge and Fulfilment Fee. Our Concierge and Fulfilment Fee is twelve per cent (12%) of the costs in 6.1(a) to (d), unless a different rate is specifically agreed in writing for a particular Order. The Fee covers our sourcing, negotiation, purchasing, consolidation, clearance coordination, and delivery work on your behalf.
+6.3  Full payment in advance. The full landed cost is payable in advance. Orders are not created on part payment or instalment. This allows us to commit immediately to suppliers and carriers and protects you from cost movements during the Order cycle.
+6.4  Payment methods. Accepted payment methods are stated in each Quotation and published on our website, and currently include:
+(a)  mobile money to verified Parcelo Freight Solutions Limited paybill or merchant numbers;
+(b)  bank transfer to our verified business account; and
+(c)  card and online payments processed through Pesapal.
+We do not accept payments to personal accounts, or to any numbers or accounts that are not published through our Verified Channels under clause 5.1.
+6.5  Currency and foreign exchange. Quotations are issued in Uganda Shillings (UGX). Where the underlying Goods or transport are priced in a foreign currency, the UGX amount stated in the Quotation is the amount payable, converted at the rate we apply on the day the Quotation is issued. If the Quotation expires under clause 5.4, any new engagement is re-quoted at the rate of the new day.
+6.6  Refunds. Refunds are made only in the limited circumstances set out in these Terms, principally clause 5.6. Where a refund is due:
+(a)  we make it to the same payment instrument used for the original payment, unless that is impractical;
+(b)  we issue it within five (5) Working Days of our written confirmation that a refund is due; and
+(c)  the amount refunded is the recoverable amount, meaning the amounts received from you that have not been irrecoverably committed on your behalf to a supplier, carrier, or other third party.
+For Goods lost or damaged in transit, our remedy is replacement of the Goods, not a refund. See clause 11.
+7.  Authority to Purchase on Your Behalf
+7.1  Limited authority. By creating an Order under clause 5, you authorise Parcelo to source and purchase the Goods described in your Quotation on your behalf, using the funds you have paid as part of the landed cost. This authority is limited strictly to that Order and to the actions reasonably necessary to perform the Service.
+7.2  Parcelo as counterparty to suppliers. Although the Goods are purchased on your behalf and for your benefit, Parcelo places orders with overseas suppliers, carriers, and clearing agents in the name of Parcelo Freight Solutions Limited, using Parcelo's accounts, payment instruments, and overseas delivery facilities. We do this to operate efficiently, to maintain consolidated supplier relationships, and to keep the supplier-side commercial terms within our control. The supplier's contract is with Parcelo, and the supplier owes its delivery and quality obligations to Parcelo.
+7.3  Title to the Goods. Title to the Goods passes to you upon successful Delivery to your agreed delivery point in Uganda, or to a person nominated by you at that point. Until then, the Goods are held by Parcelo or our subcontractors on your behalf.
+7.4  No general agency. Nothing in this clause makes Parcelo your general agent. We have no authority to make any commitment, representation, or agreement on your behalf beyond the specific purchase of the Goods described in your Quotation.
+7.5  Variations during sourcing. If, during sourcing, we discover that a Quoted item is unavailable, materially different from what was described, or has changed in price beyond what we can reasonably absorb, we will contact you through your registered channel and propose one of:
+(a)  an alternative item of equivalent specification and price;
+(b)  a revised Quotation, with any difference handled in line with clause 6; or
+(c)  a refund in line with clause 5.6 if no alternative is acceptable to you.
+We will not substitute Goods or change suppliers without your written confirmation.
+8.  Restricted and Prohibited Items
+8.1  Our published lists. Parcelo maintains a Restricted Items List and a Prohibited Items List, both of which are published on our website and made available through our Verified Channels. The lists are drawn from, and reflect, requirements imposed by Ugandan law, the Uganda Revenue Authority, the International Air Transport Association (IATA), our airline and shipping line partners, and our own operational policy. We update the lists from time to time as those requirements change.
+8.2  Prohibited Items. Parcelo will not source, purchase, or deliver Prohibited Items under any circumstances. Categories on the Prohibited Items List currently include, without limitation:
+(a)  firearms, ammunition, weapons, and parts thereof;
+(b)  explosives, fireworks, and pyrotechnics;
+(c)  narcotic drugs, psychotropic substances, and controlled substances;
+(d)  hazardous, flammable, corrosive, radioactive, or toxic materials regulated by IATA Dangerous Goods Regulations or equivalent;
+(e)  currency, bearer instruments, and items easily convertible to cash;
+(f)  live animals, human or animal remains, and biological samples;
+(g)  perishable foodstuffs that cannot survive the transit window;
+(h)  counterfeit, pirated, or otherwise infringing Goods;
+(i)  items the import of which is prohibited under Ugandan law; and
+(j)  any other items listed on our published Prohibited Items List from time to time.
+8.3  Restricted Items. Restricted Items may be handled by Parcelo only on additional terms, which may include the production of permits or licences, additional documentation, additional fees, or specific carrier arrangements. We will identify any applicable additional terms in your Quotation. If you do not accept those terms, we will not proceed.
+8.4  Updates to the lists. Because the underlying legal and operational requirements change, we update the Restricted Items List and the Prohibited Items List from time to time. The version of each list in force at the date your Quotation is issued is the version that applies to your engagement. We are not obliged to give individual notice of changes to the lists, but we publish the current versions through our Verified Channels.
+8.5  Discovery after Order creation. If we discover, after an Order has been created, that the Goods are or have become Prohibited or Restricted, clause 5.6 applies.
+8.6  Misrepresentation about the Goods. If you describe Goods inaccurately, or omit information that would have caused us to identify them as Prohibited or Restricted, you bear all losses, costs, fines, and consequences arising from that misrepresentation, in line with clauses 9.4 and 13.
+9.  Customs, Duties, and Taxes
+9.1  Clearance by Parcelo. All Goods imported into Uganda are subject to inspection, classification, and the imposition of duties, taxes, and fees by the Uganda Revenue Authority (“URA”) and any other competent authority. Parcelo handles customs clearance as part of the Service.
+9.2  B2C Orders, final landed cost. For Orders placed by individual Clients, the landed cost on your Receipt is final. If URA reclassifies the Goods at a higher tariff, applies a different valuation, or imposes additional charges beyond what we quoted, Parcelo absorbs the difference. You will not be asked to pay more than the amount on your Receipt.
+9.3  B2B Orders, estimate only. For Orders placed under a B2B engagement, meaning a Quotation that is expressly marked as a B2B Quotation, or an Order placed under a separately signed B2B service agreement:
+(a)  the customs, duties, and taxes component of the Quotation is an estimate, given in good faith for planning purposes;
+(b)  actual charges levied by URA may differ from the estimate, including where URA reclassifies the Goods, applies a different valuation, or imposes additional taxes or fees;
+(c)  any positive difference between the estimate and the actual charges is borne by the Client and is payable on demand, supported by URA documentation;
+(d)  any negative difference is refunded to the Client using the method in clause 6.6.
+A Quotation is treated as a B2C Quotation by default. The B2B treatment in this clause applies only where the Quotation or a signed agreement says so explicitly.
+9.4  Your disclosure obligations. You confirm that, in respect of every Order:
+(a)  you are not subject to any sanction, restriction, or legal prohibition that prevents you from importing the Goods into Uganda;
+(b)  you have disclosed any permits, licences, or special clearances applicable to the Goods at the time of placing your request;
+(c)  the description, value, intended use, and any other information you provide about the Goods is accurate.
+If any of these is untrue, and the Goods are detained, seized, surcharged, returned, or destroyed as a result, all related costs (including demurrage, storage, return shipping, destruction fees, and additional duties or penalties) are borne by you. Parcelo is not liable for any loss arising from your failure to disclose.
+9.5  Detention outside either party's fault. Where Goods are detained by URA or another authority for reasons that are not your fault and not a Parcelo error (for example, a regulatory change during transit, or a routine inspection that takes time):
+(a)  we will use reasonable efforts to clear the Goods promptly;
+(b)  any storage, demurrage, or related charges arising during the detention are absorbed by Parcelo for B2C Orders, and treated as part of the variable customs component for B2B Orders;
+(c)  the delivery timeline in your Quotation is suspended for the period of the detention; and
+(d)  clause 16 (Force Majeure) may also apply where the detention is caused by a force majeure event.
+9.6  Documentation. We retain URA clearance documentation for each Order in line with applicable law. You may request a copy for your Order through any of our Verified Channels under clause 5.1.
+10.  Delivery, Timelines, and Authorised Recipients
+10.1  Delivery address. Delivery is made to the address you provide to us at onboarding, or such other address in Uganda as you confirm to us in writing through one of our Verified Channels under clause 5.1 before we dispatch for last-mile Delivery. The cost of last-mile Delivery to that address is included in the landed cost on your Receipt.
+10.2  Estimated Time of Arrival. Each Quotation states an Estimated Time of Arrival (“ETA”) for Delivery. Parcelo commits to meet the ETA on your Receipt. If, for any reason, we anticipate that we will not meet the ETA, we will notify you through your registered channel as soon as we become aware, with a revised ETA and the reason for the delay. Delays caused by force majeure are governed by clause 16, and delays arising from URA detention are governed by clause 9.5.
+10.3  Pre-Delivery confirmation. Before our team dispatches for last-mile Delivery, we will check in with you through your registered channel to confirm that you, or a person you have authorised under clause 10.5, will be available to receive the Goods. We do this to avoid missed Deliveries.
+10.4  Failed Delivery. If, despite our pre-Delivery check-in, our team arrives at the agreed address and no authorised recipient is available to receive the Goods:
+(a)  the Goods are returned to our office and held safely on your behalf;
+(b)  re-Delivery is rescheduled at a time that is convenient to you;
+(c)  the cost of re-Delivery is borne by you and is payable in advance of the re-Delivery; and
+(d)  where the Goods remain at our office for an extended period without a rescheduled Delivery being arranged, clause 17 (Suspension and Termination) may apply.
+10.5  Authorised recipients. You may receive the Goods personally, or you may authorise another person to receive them on your behalf. We will deliver to a person other than you only where you have, before Delivery, instructed us in writing through one of our Verified Channels under clause 5.1 to do so, identifying the recipient by name. Where you have provided such an instruction, we will deliver as you have instructed, and the Goods are treated as having been delivered to you on handover to that person.
+10.6  Delivery confirmation. On Delivery, we record the time, place, and recipient. Delivery is treated as complete at that moment, and from that moment:
+(a)  title to the Goods passes to you under clause 7.3; and
+(b)  risk in the Goods passes to you under clause 11.1.
+10.7  Inspection at Delivery. You are encouraged to inspect the Goods at the point of Delivery and to raise any visible issue with our team on the spot. This does not replace your right to notify us of issues within seventy-two (72) hours under clause 11.6, but on-the-spot notification helps us preserve evidence and act quickly.
+11.  Loss, Damage, Vendor Errors, and Replacement
+11.1  Risk in transit. Parcelo bears the risk of loss or damage to the Goods from the moment they are received at our overseas consolidation facility in the Source Country until Delivery is completed at your agreed delivery point in Uganda. Risk passes to you on Delivery.
+11.2  Replacement, not refund. Where Goods are lost or damaged while at Parcelo's risk under clause 11.1, your remedy is replacement of the Goods at our cost. We do not issue cash refunds in this scenario. We will procure the same item, or where the same item is genuinely no longer available, an item of equivalent specification and value, and we will deliver it to you under these Terms at no additional cost.
+11.3  Limits on the replacement promise. Replacement under clause 11.2 does not apply to:
+(a)  damage caused by inherent defect, normal handling of the relevant category of Goods, or characteristics of the Goods themselves (for example, perishability, fragility you were warned of, or items the Client elected to ship without protective packaging we recommended);
+(b)  damage or loss caused by your acts or instructions, including incorrect delivery details or refusal to accept Delivery within a reasonable period;
+(c)  one-of-a-kind, custom-made, or otherwise irreplaceable Goods, where we will instead use reasonable efforts to recover the value from the responsible party and pass on whatever is recovered;
+(d)  loss or damage caused by force majeure as set out in clause 16; and
+(e)  Goods we have warned you in writing we cannot replace before you proceeded with the Order.
+11.4  Vendor errors and disputes. If a source vendor sends the wrong item, an item that is not as described, a damaged item, an incomplete order, or commits any other failure of its supply obligations, the position is as follows:
+(a)  Parcelo, as the contracting party with the vendor under clause 7.2, will pursue the dispute with the vendor on your behalf. We will use reasonable efforts to recover a refund, replacement, or other remedy from the vendor.
+(b)  During this dispute period, we will keep you informed through your registered channel.
+(c)  Where we recover a remedy from the vendor, we pass it on to you in full. If the vendor sends a replacement item, we deliver it to you under these Terms. If the vendor refunds in cash, we refund the equivalent amount to you using the method in clause 6.6.
+(d)  Where we are unable to recover from the vendor despite reasonable efforts, the loss is borne by you. Parcelo does not refund or replace Goods in respect of vendor failures we cannot recover.
+11.5  Parcelo errors. Where loss, damage, or shortage is caused by Parcelo's own error (for example, we ordered the wrong item, we packed the wrong item, or we delivered to the wrong recipient), we will at our cost either replace the Goods or refund the amount you paid for that item, at your election. This is the only category in which we issue cash refunds for loss or damage.
+11.6  Notice of issues. You must notify us of any loss, damage, shortage, or non-conformity within seventy-two (72) hours of Delivery, through one of our Verified Channels under clause 5.1. Photographs and a description of the issue are required. Claims raised after this period may not be actionable, particularly where the delay prevents us from preserving evidence or pursuing the responsible carrier or vendor.
+12.  Limitation of Liability
+12.1  Scope of this clause. This clause sets out the limits of Parcelo's liability to you arising out of, or in connection with, the Service, an Order, these Terms, or any related matter, whether the claim is brought in contract, in tort (including negligence), under statute, or on any other basis.
+12.2  Liability cap. Subject to clauses 12.4 and 12.5, our total aggregate liability to you in respect of any Order is capped at the landed cost paid by you for that Order, as stated on your Receipt. This cap is the maximum amount you can recover from Parcelo for all claims, losses, and remedies in connection with that Order taken together.
+12.3  Excluded losses. Subject to clauses 12.4 and 12.5, Parcelo is not liable to you for any of the following, whether direct or indirect, foreseeable or otherwise:
+(a)  indirect, special, or consequential losses;
+(b)  loss of profit, revenue, or anticipated savings;
+(c)  loss of business, business opportunities, or contracts;
+(d)  loss of, or corruption to, data; and
+(e)  loss of, or damage to, goodwill or reputation.
+12.4  What this clause does not limit. Nothing in these Terms limits or excludes our liability for:
+(a)  fraud or fraudulent misrepresentation;
+(b)  willful misconduct or gross negligence;
+(c)  death or personal injury caused by our negligence; or
+(d)  any other liability that cannot lawfully be limited or excluded under the laws of Uganda.
+12.5  Specific remedies preserved. The cap in clause 12.2 and the exclusions in clause 12.3 do not reduce or replace the specific remedies set out elsewhere in these Terms, including:
+(a)  replacement of Goods lost or damaged in transit under clause 11.2;
+(b)  refunds in the limited circumstances set out in clauses 5.6, 6.6, and 11.5; and
+(c)  absorption of customs reclassifications for B2C Orders under clause 9.2.
+Where a specific remedy is set out in another clause, that remedy is what you are entitled to for that situation, and the cap in clause 12.2 then applies to any further loss above that remedy.
+12.6  Time limit for claims. You must commence any formal legal action against Parcelo within six (6) months from the date of Delivery of the Order to which the claim relates, or, where the claim relates to an Order that was not delivered, within six (6) months from the date the claim arose. Any claim brought after this period is time-barred. This is in addition to the seventy-two (72) hour notification requirement in clause 11.6, which applies to loss, damage, or non-conformity issues at Delivery.
+12.7  Reasonableness. You acknowledge that the limits and exclusions in this clause are reasonable given the nature of the Service, the level of the Concierge and Fulfilment Fee, and the operational realities of international sourcing and delivery, and that you have had the opportunity to review them before placing any Order.
+13.  Client Warranties and Indemnity
+13.1  By engaging Parcelo, you warrant and represent to us that:
+(a)  you have the legal capacity and authority to enter into these Terms and to place each Order;
+(b)  all information you provide to us, including the description, value, and intended use of the Goods, is accurate and complete;
+(c)  the Goods are intended for your personal use, household use, or, where you are an organisation, your bona fide business use, and not for resale on a commercial scale unless we have specifically agreed otherwise in writing;
+(d)  the Goods are not Prohibited Items under clause 8 and, if Restricted Items, you will comply with the additional terms we identify;
+(e)  the funds you use to pay for the Service are from a lawful source;
+(f)  you are not subject to any sanction, restriction, or legal prohibition that affects your ability to import the Goods; and
+(g)  your use of our Service complies with all applicable Ugandan and other relevant laws.
+13.2  Indemnity. You agree to indemnify, defend, and hold harmless Parcelo, its directors, employees, contractors, and agents, from and against any loss, damage, claim, fine, penalty, cost, or expense (including reasonable legal fees) suffered or incurred by us arising out of, or in connection with:
+(a)  your breach of any of the warranties in clause 13.1;
+(b)  your breach of these Terms generally;
+(c)  your negligent or unlawful act or omission;
+(d)  any inaccurate or incomplete information you provide to us; or
+(e)  any third-party claim arising from your conduct in connection with the Service.
+13.3  Cooperation. Where a claim against Parcelo gives rise to your indemnity under clause 13.2, we will notify you of the claim, allow you to participate in the response on terms agreed between us, and use reasonable efforts to mitigate. We retain control of any settlement, but we will not settle on terms that admit liability on your behalf without your consent, which is not to be unreasonably withheld.
+14.  Intellectual Property
+14.1  The Parcelo name, the Parcelo logo, the brand persona “Walter | The Shopping Concierge”, and all related marks, taglines, designs, photography, written content, and visual identity (the “Parcelo Brand”) are the property of Parcelo Freight Solutions Limited or its licensors. Nothing in these Terms grants you any right or licence to use the Parcelo Brand for any commercial purpose.
+14.2  The contents of our website, WhatsApp catalogues, marketing materials, and any documentation we share with you are protected by copyright. You may view, download, and print such content for your personal, non commercial use in connection with our Service. You may not reproduce, republish, distribute, modify, or commercially exploit any of this content without our prior written consent.
+14.3  You may not use any robot, scraper, or automated system to access, copy, or extract data from our website or any of our communication channels.
+14.4  If you submit feedback, suggestions, photographs of received Goods, testimonials, or any other content to us, you grant Parcelo a non-exclusive, royalty-free, worldwide licence to use that content for internal records and customer service improvement. We will only use such content for marketing purposes where you have given us specific written consent to do so.
+14.5  Goods sourced and delivered to you remain the intellectual property of their respective brand owners and manufacturers. Parcelo makes no warranty as to the authenticity of branded Goods beyond confirming the source from which we purchased them on your behalf.
+15.  Privacy and Data Protection
+15.1  Privacy Policy. Our collection and processing of personal data is governed by our Privacy Policy, which is published on our website and forms part of these Terms. By engaging our Service, you confirm that you have read and understood our Privacy Policy.
+15.2  Lawful processing. Parcelo processes personal data in accordance with the Data Protection and Privacy Act 2019 of Uganda and any regulations and guidance issued under it. Where we process personal data in connection with cross-border activities, we apply equivalent safeguards.
+15.3  What we collect and why. To provide the Service, we typically collect:
+(a)  your name, phone number, email address, and delivery address;
+(b)  the description and value of Goods you ask us to source;
+(c)  payment information necessary to process your payment;
+(d)  your communications with us through our Verified Channels; and
+(e)  any additional information we reasonably require for clearance, delivery, or compliance.
+15.4  Sharing. We share personal data only as necessary to provide the Service, including with overseas suppliers, carriers, customs agents, payment processors, and other partners. We do not sell your personal data.
+15.5  Your rights. Subject to applicable law, you have rights of access to, correction of, and (in certain circumstances) deletion of your personal data, as described in our Privacy Policy. You may exercise these rights by contacting us through any Verified Channel.
+15.6  Security. We apply reasonable technical and organisational measures to protect personal data. No system is perfectly secure, and we cannot guarantee absolute security, but we take steps to detect and respond to security incidents and to notify affected Clients where required by law.
+16.  Force Majeure
+16.1  Neither party is liable for any failure or delay in performing its obligations under these Terms to the extent that the failure or delay is caused by an event beyond its reasonable control (a “Force Majeure Event”).
+16.2  Force Majeure Events include, without limitation:
+(a)  acts of God, fire, flood, earthquake, severe weather, and other natural disasters;
+(b)  war, armed conflict, civil unrest, terrorism, and acts of public enemies;
+(c)  epidemic, pandemic, and public health emergencies;
+(d)  actions of governments and regulatory authorities, including border closures, embargoes, sanctions, sudden regulatory changes, and customs detentions outside the parties' control;
+(e)  failure or disruption of carriers, airlines, shipping lines, ports, airports, or other essential infrastructure;
+(f)  failure or disruption of telecommunications, internet, banking, or payment infrastructure;
+(g)  strikes, lockouts, and labour disputes affecting third parties; and
+(h)  any other event of similar character that is beyond the affected party's reasonable control.
+16.3  The party affected by a Force Majeure Event will notify the other party as soon as reasonably practicable, describe the event, and use reasonable efforts to mitigate its effects and to resume performance.
+16.4  If a Force Majeure Event prevents performance for more than sixty (60) consecutive days, either party may terminate the affected Order by written notice. On such termination, Parcelo refunds the recoverable amount under clause 6.6, and neither party has any further claim against the other in respect of that Order, save for liabilities accrued before the Force Majeure Event.
+17.  Suspension and Termination
+17.1  Suspension by Parcelo. We may suspend our provision of the Service to you, in whole or in part, where:
+(a)  you are in breach of these Terms and have not remedied the breach within a reasonable period after we have asked you to do so;
+(b)  we reasonably suspect fraud, money laundering, sanctions evasion, or other unlawful conduct in connection with your engagement;
+(c)  you have failed to provide information we have reasonably requested under clause 4.4;
+(d)  an Order is on hold pending clearance of an issue, including under clauses 5.6, 8, or 9; or
+(e)  Goods have remained at our office without rescheduled Delivery for more than thirty (30) days under clause 10.4(d).
+17.2  Termination by Parcelo. We may terminate our relationship with you, with immediate effect by notice through any Verified Channel, where:
+(a)  you have committed a material breach of these Terms that cannot be remedied, or that you have failed to remedy within a reasonable period after notice;
+(b)  we are required to do so by law or by the order of a competent authority;
+(c)  you become insolvent, bankrupt, or otherwise unable to meet your financial obligations; or
+(d)  continued provision of the Service to you would expose Parcelo to material legal, regulatory, reputational, or operational risk.
+17.3  Termination by you. You may stop using our Service at any time. If you wish to close your engagement with Parcelo, you may notify us through any Verified Channel. Termination by you does not affect Orders already created, which remain governed by these Terms until completed or otherwise resolved.
+17.4  Effect of termination. On termination of the relationship:
+(a)  any in-flight Order at the date of termination continues to be governed by these Terms until completed, unless we agree otherwise in writing;
+(b)  amounts properly due to either party at the date of termination remain payable;
+(c)  clauses that, by their nature, are intended to survive termination (including clauses 11, 12, 13, 14, 15, 18, and 19) continue to apply.
+17.5  Goods at our office. Where Goods remain at our office after termination because re-Delivery has not been arranged within a reasonable period, we may, after giving you written notice and a further reasonable period to collect:
+(a)  charge reasonable storage fees;
+(b)  arrange disposal of perishable, hazardous, or low-value Goods; or
+(c)  in the case of other Goods, exercise any rights available to us under applicable law in respect of unclaimed property.
+18.  Governing Law and Dispute Resolution
+18.1  Governing law. These Terms, and any dispute or claim arising out of or in connection with them, the Service, an Order, or any related matter, are governed by and construed in accordance with the laws of Uganda.
+18.2  Three-step dispute resolution. If a dispute arises between you and Parcelo, the parties agree to follow the three steps below in order. No party may escalate to a later step without first attempting the earlier one in good faith, except where the dispute concerns the immediate enforcement of a right that cannot reasonably wait, or where a limitation period would otherwise expire.
+Step 1: Direct resolution
+You raise the issue with Parcelo through one of our Verified Channels under clause 5.1, with reasonable detail of the facts and the outcome you are seeking. Parcelo acknowledges receipt and responds. The parties try to resolve the dispute informally for a period of thirty (30) days from the date the issue is raised.
+Step 2: Mediation
+If the dispute is not resolved within the thirty (30) day period in Step 1, either party may refer the dispute to mediation administered by the Centre for Arbitration and Dispute Resolution (CADER) in Kampala, in accordance with CADER's mediation rules in force at the time. The parties share the costs of the mediator equally, and each party bears its own costs of participation. The parties agree to engage with the mediation process in good faith for a period of at least sixty (60) days from the date the matter is referred to CADER, or such longer period as the parties agree in writing.
+Step 3: Courts
+If the dispute is not resolved through mediation under Step 2, either party may commence proceedings in the courts of Uganda, which have exclusive jurisdiction over the dispute. Nothing in this clause prevents a party from seeking urgent injunctive or interim relief from the courts of Uganda at any time.
+18.3  Time limits preserved. The dispute resolution process in this clause runs alongside, and does not extend, the time limits in clauses 11.6 and 12.6. You must take steps within those time limits to preserve your rights, even while a dispute is being worked through Steps 1 and 2.
+18.4  B2B arrangements. For B2B engagements under a separately signed B2B service agreement, the parties may agree a different dispute resolution path, including binding arbitration. Where a B2B service agreement specifies a different path, that path applies in place of this clause for that engagement.
+19.  Entire Agreement, Severability, Waiver, and Assignment
+19.1  These Terms, together with any Quotation we have issued to you, any invoice we have raised, and our Privacy Policy, constitute the entire agreement between you and Parcelo for the Service. They supersede all previous communications, proposals, and representations, whether spoken or written, between you and Parcelo on the same subject matter.
+19.2  If any part of these Terms is found to be unlawful, void, or unenforceable by a court or competent authority, that part will be severed from the rest, and the remaining Terms will continue in full force and effect.
+19.3  If we do not enforce a right or provision of these Terms on any occasion, that does not mean we have given up the right to enforce it on a future occasion. A waiver is only effective if it is in writing and signed by a person duly authorised by Parcelo.
+19.4  You may not assign, transfer, or delegate any of your rights or obligations under these Terms without our prior written consent. We may assign or transfer our rights and obligations to any successor in our business, or to any of our affiliates, on written notice to you.
+19.5  The headings in these Terms are for convenience only and do not affect the interpretation of any clause.
+19.6  Nothing in these Terms creates a partnership, joint venture, or employment relationship between you and Parcelo. Other than the limited authority you grant us under clause 7 to purchase Goods on your behalf, neither party has authority to bind the other.
+20.  Contact and Notices
+20.1  Our primary communication channel is WhatsApp. By engaging our Service, you consent to receiving messages, voice notes, photographs, Quotations, invoices, and notices from us through WhatsApp at the number you have registered with us.
+20.2  You may reach us through any of the following:
+•  WhatsApp: [insert verified number]
+•  Email: [insert verified email]
+•  Office: [insert physical address], Kampala, Uganda
+•  Working hours: [insert hours] on Working Days.
+20.3  We may communicate with you and serve notices through any of the following channels: WhatsApp, email, SMS, voice call, or postal mail at the most recent address we hold for you. It is your responsibility to keep your contact details current with us.
+20.4  A notice is treated as received:
+(a)  when sent by WhatsApp or email, at the time of successful delivery to the recipient's device or inbox, as shown by our system records;
+(b)  when sent by SMS, at the time of successful delivery as confirmed by the network operator;
+(c)  when delivered by hand or by courier, at the time of physical delivery; or
+(d)  when sent by post, three Working Days after posting.
+20.5  If you have a complaint, concern, or dispute, please contact us first using the details in clause 20.2 so we can attempt to resolve it directly. Clause 18 sets out the formal dispute resolution process if direct contact does not resolve the matter.
+
+
+End of Document  ·  PCL-LEGAL-TOU-26-001  ·  v0.1 (Draft)

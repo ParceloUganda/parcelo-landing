@@ -17,6 +17,7 @@ import Login from './pages/Login';
 import Tracking from './pages/Tracking';
 import ProhibitedItems from './pages/ProhibitedItems';
 import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 import './parcelo.css';
 
 function LandingPage() {
@@ -65,6 +66,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/prohibited-items" component={ProhibitedItems} />
         <Route path="/privacy" component={Privacy} />
+        <Route path="/terms" component={Terms} />
         <Route component={LandingPage} />
       </Switch>
     </WouterRouter>
