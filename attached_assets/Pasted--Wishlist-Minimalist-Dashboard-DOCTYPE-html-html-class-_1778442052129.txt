@@ -1,0 +1,763 @@
+<!-- Wishlist - Minimalist Dashboard -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#1b1b1b",
+                      "on-primary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed": "#e9e2cc",
+                      "surface-container-low": "#f3f3f3",
+                      "secondary-container": "#fdbf13",
+                      "secondary": "#795900",
+                      "on-secondary": "#ffffff",
+                      "on-surface": "#1b1b1b",
+                      "primary": "#000000",
+                      "inverse-on-surface": "#f1f1f1",
+                      "primary-container": "#1b1b1b",
+                      "on-error-container": "#93000a",
+                      "surface-container": "#eeeeee",
+                      "on-primary-fixed": "#1b1b1b",
+                      "surface-dim": "#dadada",
+                      "on-tertiary": "#ffffff",
+                      "on-surface-variant": "#4c4546",
+                      "secondary-fixed": "#ffdf9f",
+                      "on-primary-container": "#848484",
+                      "tertiary-fixed-dim": "#ccc6b1",
+                      "inverse-primary": "#c6c6c6",
+                      "surface-tint": "#5e5e5e",
+                      "primary-fixed-dim": "#c6c6c6",
+                      "on-error": "#ffffff",
+                      "inverse-surface": "#303030",
+                      "on-secondary-fixed": "#261a00",
+                      "surface-bright": "#f9f9f9",
+                      "surface-container-high": "#e8e8e8",
+                      "surface-container-lowest": "#ffffff",
+                      "outline-variant": "#cfc4c5",
+                      "surface-container-highest": "#e2e2e2",
+                      "surface": "#f9f9f9",
+                      "surface-variant": "#e2e2e2",
+                      "on-secondary-container": "#6c5000",
+                      "primary-fixed": "#e2e2e2",
+                      "outline": "#7e7576",
+                      "on-tertiary-fixed-variant": "#4a4737",
+                      "on-primary-fixed-variant": "#474747",
+                      "on-secondary-fixed-variant": "#5b4300",
+                      "tertiary": "#000000",
+                      "secondary-fixed-dim": "#fabd0d",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#1e1c0e",
+                      "on-tertiary-fixed": "#1e1c0e",
+                      "background": "#f9f9f9",
+                      "on-tertiary-container": "#898471"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-lg": "32px",
+                      "left-rail-width": "240px",
+                      "gutter": "24px",
+                      "margin": "40px",
+                      "stack-md": "16px",
+                      "container-max-width": "1440px",
+                      "stack-sm": "8px",
+                      "right-rail-width": "320px"
+              },
+              "fontFamily": {
+                      "label-md": ["Arimo"],
+                      "body-lg": ["Arimo"],
+                      "headline-md": ["Arimo"],
+                      "body-md": ["Arimo"],
+                      "headline-lg": ["Arimo"],
+                      "label-sm": ["Arimo"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center h-16 px-margin w-full fixed top-0 z-50 bg-surface border-b border-outline-variant dark:border-outline">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface">Parcelo</div>
+<div class="flex items-center gap-stack-md">
+<button class="material-symbols-outlined p-2 text-on-surface-variant hover:bg-surface-container-low transition-colors rounded-full">notifications</button>
+</div>
+</header>
+<div class="flex pt-16">
+<!-- Simplified Left SideNavBar -->
+<aside class="fixed left-0 top-16 h-[calc(100vh-64px)] w-left-rail-width bg-surface border-r border-outline-variant dark:border-outline flex flex-col py-stack-lg px-stack-md gap-stack-sm">
+<nav class="flex flex-col gap-1 flex-grow">
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">home</span>
+                    Home
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">package_2</span>
+                    Orders
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 text-primary font-bold bg-secondary-container rounded-lg font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+                    Wishlist
+                </a>
+</nav>
+<!-- User Profile Section at Bottom -->
+<div class="mt-auto pt-stack-lg border-t border-outline-variant">
+<div class="flex items-center gap-3 mb-4 px-1">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of David Okello" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD39mfztzt48IM6uEIc5iJeQlSZGlMCks3jh4ip5o8zwemU6mUW8AJM7YeypnzfDvcGlG23gGSocaHKIDmMvFJ6kLyXDxqKjViQXt3zYiRCah5n9tB5LvMJSN8SzPSt-LgbNj1l4AkARTslIqcjJFER1OR18kmzYwsuBufs1uRJSKLowXwCBSUUbZD1lLmy6i7DV_a7lnR0QhIpFhezgQoaHfK7ipiP1NyOV4UloWhmgCAvGRwi1dTNw7U0-Jln1TicsMgwyFsoyJ8"/>
+</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md font-bold text-on-background truncate">David Okello</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-left-rail-width flex-grow p-margin max-w-container-max-width mx-auto">
+<header class="mb-stack-lg">
+<h1 class="font-headline-lg text-headline-lg text-on-background mb-2">Wishlist</h1>
+<p class="text-on-surface-variant font-body-md">Items and quotes you've saved for later. Review and approve them when you're ready.</p>
+</header>
+<!-- Saved Quotes Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-gutter">
+<!-- Quote Card 1 -->
+<div class="bg-white border border-outline-variant p-stack-md flex gap-gutter hover:shadow-sm transition-shadow">
+<div class="w-32 h-32 bg-surface-container-low flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Nike Air Max 270" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiIzgI9UQtaNQ0AorU0k6yhi3SFhnvlRH4WL-I0lBnl_oFK7avi7JQPihwEr29guJkUrVLG7-a-mTzTQ6g18qNwOX_n3UFeHWnv1CgChtPbqnxvj3-X858uCcx-pIbOKPYjZ_XUOU9H-5y4S4pVYK432_wDINya4UCLBb1ADKA_H-uMXD6A2OG8IuhqNufUaRvmWwcohbDc3p6rc8nEU3JoCfawf0m32c14g44UDE53FGRrbRbbitdw7isYoZmqcWNH1HjWsFDahs"/>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md font-bold text-on-background">Nike Air Max 270</h3>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Saved 2 days ago</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm mt-1 line-clamp-2">Premium logistics quote for cross-border shipping from UK to Kampala. Includes customs clearing and doorstep delivery.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="font-headline-md text-headline-md font-bold text-primary">UGX 845,000</span>
+<div class="flex gap-2">
+<button class="text-error font-label-md text-label-md px-3 py-1 hover:bg-error-container transition-colors rounded">Remove</button>
+<button class="bg-secondary-container text-black px-4 py-2 font-bold font-label-md text-label-md rounded hover:opacity-90">Move to Quotes</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quote Card 2 -->
+<div class="bg-white border border-outline-variant p-stack-md flex gap-gutter hover:shadow-sm transition-shadow">
+<div class="w-32 h-32 bg-surface-container-low flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist Watch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4UseFvX9K5YmsrsgKT9yZsbOUScylaIKmTbi5oFFdfHo_JUM-ap6tJ64Fl5qAE4M-e8MBy0ODCLH__rxjmw2fWAcmZHVRKMpkiG1_18Y6fFppAbUosYKT-OQ6akiaUbwkWlQH7JUoSyNPt0TNeFFPmienrzmUq3T-FJpc22v7mG8pYyMifj_PbKG769gk9KGrmIV5BDgfV35yOKFPOGZEDcDTVeIRJUrjBjrJ_C4wh5qJZLxaWZWIywHlj3vU-zW659KhIhMLyNU"/>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md font-bold text-on-background">Minimalist Watch</h3>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Saved 5 days ago</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm mt-1 line-clamp-2">Express shipping quote from USA. Fragile handling requested. Guaranteed delivery within 7 working days.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="font-headline-md text-headline-md font-bold text-primary">UGX 1,250,000</span>
+<div class="flex gap-2">
+<button class="text-error font-label-md text-label-md px-3 py-1 hover:bg-error-container transition-colors rounded">Remove</button>
+<button class="bg-secondary-container text-black px-4 py-2 font-bold font-label-md text-label-md rounded hover:opacity-90">Move to Quotes</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quote Card 3 -->
+<div class="bg-white border border-outline-variant p-stack-md flex gap-gutter hover:shadow-sm transition-shadow">
+<div class="w-32 h-32 bg-surface-container-low flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Sony WH-1000XM5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxKkDrjVsu65tl4StobGYbxHcI0qdYhuDlmCGKlrLToIP9uwKwRpU3bEvfnXdMIe1m3gkxXjCdFvECm2auKYl1mHBLfcInjMAC7-YBNX4sV4EcaBa7q6YXOXNk1HNT4li1QW2GBF8PV-sJieXat2r8cYbqaQ86QJZILA3MCk_bsXULa2YTphwVtANRT2SY2Ya1sOBW6LE3oSZBxpOrnf0wHRxnHaAyL9b4Yqc9AFnpr7LSubMT558nFSQW65pcJl5GPeiVilCQ4O0"/>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md font-bold text-on-background">Sony WH-1000XM5</h3>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Saved yesterday</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm mt-1 line-clamp-2">Logistics only quote for electronic device. Includes insurance and secure transit tracking.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="font-headline-md text-headline-md font-bold text-primary">UGX 1,890,000</span>
+<div class="flex gap-2">
+<button class="text-error font-label-md text-label-md px-3 py-1 hover:bg-error-container transition-colors rounded">Remove</button>
+<button class="bg-secondary-container text-black px-4 py-2 font-bold font-label-md text-label-md rounded hover:opacity-90">Move to Quotes</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State (Hidden) -->
+<div class="hidden flex-col items-center justify-center py-20 text-center">
+<div class="w-24 h-24 bg-surface-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-outline">bookmark_border</span>
+</div>
+<h2 class="font-headline-md text-headline-md mb-2">Your wishlist is empty</h2>
+<p class="text-on-surface-variant font-body-md mb-8">Save quotes here to review them later.</p>
+<a class="bg-primary text-on-primary px-8 py-3 rounded font-bold font-label-md text-label-md" href="#">Back to Home</a>
+</div>
+</main>
+</div>
+</body></html>
+
+<!-- Home - Minimalist Dashboard -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Parcelo Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#1e1c0e",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#ffdf9f",
+                        "on-surface": "#1b1b1b",
+                        "surface-container": "#eeeeee",
+                        "surface-tint": "#5e5e5e",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-surface-variant": "#4c4546",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-fixed-dim": "#ccc6b1",
+                        "background": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#c6c6c6",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "inverse-on-surface": "#f1f1f1",
+                        "secondary-container": "#fdbf13",
+                        "secondary": "#795900",
+                        "outline": "#7e7576",
+                        "tertiary": "#000000",
+                        "surface-bright": "#f9f9f9",
+                        "secondary-fixed-dim": "#fabd0d",
+                        "on-primary-container": "#848484",
+                        "inverse-surface": "#303030",
+                        "on-secondary-fixed": "#261a00",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-background": "#1b1b1b",
+                        "tertiary-container": "#1e1c0e",
+                        "outline-variant": "#cfc4c5",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a4737",
+                        "tertiary-fixed": "#e9e2cc",
+                        "primary": "#000000",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary-container": "#898471",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "primary-container": "#1b1b1b",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#6c5000",
+                        "primary-fixed": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "left-rail-width": "260px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "container-max-width": "1440px",
+                        "gutter": "24px",
+                        "stack-md": "16px",
+                        "right-rail-width": "320px",
+                        "margin": "40px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Arimo"],
+                        "body-lg": ["Arimo"],
+                        "label-md": ["Arimo"],
+                        "headline-lg": ["Arimo"],
+                        "label-sm": ["Arimo"],
+                        "headline-md": ["Arimo"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Arimo', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center h-16 px-margin w-full fixed top-0 z-50 bg-surface border-b border-outline-variant">
+<div class="font-headline-md text-headline-md font-bold text-primary">Parcelo</div>
+<div class="flex items-center gap-stack-md">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low p-2 rounded transition-colors" data-icon="notifications">notifications</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low p-2 rounded transition-colors" data-icon="account_circle">account_circle</button>
+</div>
+</header>
+<!-- SideNavBar (Left Rail) -->
+<aside class="fixed left-0 top-0 h-screen w-left-rail-width border-r border-outline-variant bg-surface flex flex-col py-stack-lg px-stack-md pt-20">
+<div class="px-2 mb-8">
+<div class="font-headline-md text-headline-md font-black text-primary">Parcelo</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Premium Logistics</div>
+</div>
+<nav class="flex-1 flex flex-col gap-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 text-primary font-bold bg-secondary-container rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="package_2">package_2</span>
+<span class="font-label-md text-label-md">Orders</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-label-md text-label-md">Wishlist</span>
+</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-outline-variant">
+<div class="flex items-center gap-3 px-2 mb-6">
+<img alt="Julian's profile picture" class="w-10 h-10 rounded-full object-cover grayscale" data-alt="Julian's profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaS9ZeZgtvHBnwUkKiNGAWNW78RNFBA694Det-yqsZo9rVPA-KXpzsTD0fBX1rqo_qzED9kTjaWIhswq3BV1vBuYKYQbuta7CTdjt9ypgdPUGOYXWvATmbb2kdJTtV2t5p5a37yjcueihxhBwU39tcJpLOSwbf_7Bh6Uv3eTJn6BH1-GZ1j2EMF4E2MdUe5OP5gOuYuAp1V1pOGPdv9PRHPT6xRG5xsDf-B9_eI0S4bhjkTeOz4lj6jVyIUdCFXRWDtjPcsuAmlSY"/>
+<div class="overflow-hidden">
+<p class="font-label-md text-label-md font-bold text-primary truncate">Julian Anderson</p>
+<p class="text-xs text-on-surface-variant truncate">Premium Member</p>
+</div>
+</div>
+<div class="flex flex-col gap-1 mb-4">
+<a class="flex items-center gap-3 px-4 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="font-label-sm text-label-sm">Addresses</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="credit_card">credit_card</span>
+<span class="font-label-sm text-label-sm">Billing</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-error hover:bg-error-container/20 rounded transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="logout">logout</span>
+<span class="font-label-sm text-label-sm">Sign Out</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-left-rail-width pt-24 px-margin min-h-screen">
+<div class="max-w-[1000px] mx-auto pb-20">
+<!-- Greeting -->
+<header class="mb-stack-lg">
+<h1 class="font-headline-lg text-headline-lg text-primary">Good morning, Julian.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">Welcome back to your global shopping dashboard.</p>
+</header>
+<!-- Priority Logic: Quote awaiting approval card -->
+<section class="mb-12">
+<div class="bg-[#FFF8E1] p-8 rounded-xl border border-secondary/20 relative overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-2 text-secondary mb-4">
+<span class="material-symbols-outlined" data-icon="priority_high">priority_high</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-widest">Action Required</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Quote awaiting approval</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-2xl">
+                            We've received your request for the Apple Store UK items. Your personalized quote is ready for review and payment. Review the details to proceed with your order.
+                        </p>
+<div class="flex items-center gap-4">
+<button class="bg-secondary-container text-primary font-bold px-8 py-3 rounded-lg hover:opacity-90 active:scale-95 transition-all">
+                                Review Quote
+                            </button>
+<button class="text-primary font-bold border border-primary px-8 py-3 rounded-lg hover:bg-surface-container-low transition-colors">
+                                View Details
+                            </button>
+</div>
+</div>
+<!-- Subtle background decoration -->
+<span class="material-symbols-outlined absolute -right-8 -bottom-8 text-[160px] text-secondary opacity-5" data-icon="request_quote">request_quote</span>
+</div>
+</section>
+<!-- Secondary section: Recent orders -->
+<section>
+<div class="flex justify-between items-end mb-6">
+<h3 class="font-headline-md text-headline-md text-primary">Recent orders</h3>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:opacity-70 transition-opacity" href="#">See all orders</a>
+</div>
+<div class="grid gap-gutter">
+<!-- Order 1 -->
+<div class="bg-surface border border-outline-variant p-6 rounded-lg flex items-center justify-between group hover:border-primary transition-colors">
+<div class="flex gap-6 items-center">
+<div class="w-16 h-16 bg-surface-container-high rounded flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[32px]" data-icon="package_2">package_2</span>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-1">
+<span class="font-bold text-primary font-body-md">PC-882194</span>
+<span class="bg-secondary text-on-secondary text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-tight">In Transit</span>
+</div>
+<p class="text-on-surface-variant text-sm">Selfridges London • 3 items • £420.00 • Est: Thursday, 14 Oct</p>
+</div>
+</div>
+<button class="px-6 py-2 border border-primary text-primary font-bold rounded hover:bg-primary hover:text-on-primary transition-all">
+                            Track Order
+                        </button>
+</div>
+<!-- Order 2 -->
+<div class="bg-surface border border-outline-variant p-6 rounded-lg flex items-center justify-between group hover:border-primary transition-colors">
+<div class="flex gap-6 items-center">
+<div class="w-16 h-16 bg-surface-container-high rounded flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[32px]" data-icon="inventory">inventory</span>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-1">
+<span class="font-bold text-primary font-body-md">PC-879012</span>
+<span class="bg-surface-container text-on-surface-variant text-[10px] px-2 py-1 rounded font-bold uppercase tracking-tight">Delivered</span>
+</div>
+<p class="text-on-surface-variant text-sm">Amazon US • 1 item • $1,200.00</p>
+</div>
+</div>
+<button class="px-6 py-2 border border-primary text-primary font-bold rounded hover:bg-primary hover:text-on-primary transition-all">
+                            Open
+                        </button>
+</div>
+</div>
+</section>
+<!-- Bento-style discovery section -->
+</div>
+</main>
+</body></html>
+
+<!-- Your Orders - Streamlined Parcelo Dashboard -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Orders | Parcelo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#1e1c0e",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#ffdf9f",
+                    "on-surface": "#1b1b1b",
+                    "surface-container": "#eeeeee",
+                    "surface-tint": "#5e5e5e",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#1b1b1b",
+                    "on-surface-variant": "#4c4546",
+                    "surface-container-high": "#e8e8e8",
+                    "tertiary-fixed-dim": "#ccc6b1",
+                    "background": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#c6c6c6",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "inverse-on-surface": "#f1f1f1",
+                    "secondary-container": "#fdbf13",
+                    "secondary": "#795900",
+                    "outline": "#7e7576",
+                    "tertiary": "#000000",
+                    "surface-bright": "#f9f9f9",
+                    "secondary-fixed-dim": "#fabd0d",
+                    "on-primary-container": "#848484",
+                    "inverse-surface": "#303030",
+                    "on-secondary-fixed": "#261a00",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "on-background": "#1b1b1b",
+                    "tertiary-container": "#1e1c0e",
+                    "outline-variant": "#cfc4c5",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#4a4737",
+                    "tertiary-fixed": "#e9e2cc",
+                    "primary": "#000000",
+                    "on-primary-fixed-variant": "#474747",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary-container": "#898471",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary": "#ffffff",
+                    "surface": "#f9f9f9",
+                    "primary-container": "#1b1b1b",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#dadada",
+                    "on-secondary-container": "#6c5000",
+                    "primary-fixed": "#e2e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "left-rail-width": "260px",
+                    "stack-lg": "32px",
+                    "stack-sm": "8px",
+                    "container-max-width": "1440px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "right-rail-width": "320px",
+                    "margin": "40px"
+            },
+            "fontFamily": {
+                    "body-md": ["Arimo"],
+                    "body-lg": ["Arimo"],
+                    "label-md": ["Arimo"],
+                    "headline-lg": ["Arimo"],
+                    "label-sm": ["Arimo"],
+                    "headline-md": ["Arimo"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Arimo', sans-serif;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation (Mobile only) -->
+<header class="flex justify-between items-center h-16 px-margin w-full fixed top-0 z-50 bg-surface border-b border-outline-variant md:hidden">
+<div class="font-headline-md text-headline-md font-bold text-primary">Parcelo</div>
+<div class="flex gap-stack-md">
+<span class="material-symbols-outlined text-primary">notifications</span>
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</header>
+<!-- SideNavBar (Left Rail) -->
+<aside class="hidden md:flex flex-col py-stack-lg px-stack-md gap-stack-sm fixed left-0 top-0 h-screen w-left-rail-width bg-surface border-r border-outline-variant">
+<div class="mb-stack-lg px-stack-sm">
+<h1 class="font-headline-md text-headline-md font-black text-primary">Parcelo</h1>
+<p class="font-label-md text-label-md text-on-surface-variant">Premium Logistics</p>
+</div>
+<nav class="flex flex-col gap-1 overflow-y-auto">
+<a class="flex items-center gap-stack-md p-stack-sm text-on-surface-variant hover:bg-surface-container-high transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-stack-md p-stack-sm text-primary font-bold bg-secondary-container rounded-lg" href="#">
+<span class="material-symbols-outlined">package_2</span>
+<span class="font-label-md text-label-md">Orders</span>
+</a>
+<a class="flex items-center gap-stack-md p-stack-sm text-on-surface-variant hover:bg-surface-container-high transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-label-md text-label-md">Wishlist</span>
+</a>
+<div class="mt-stack-md mb-2 px-stack-sm text-[10px] uppercase font-bold tracking-widest text-on-surface-variant opacity-60">Account Settings</div>
+<a class="flex items-center gap-stack-md p-stack-sm text-on-surface-variant hover:bg-surface-container-high transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-label-md">General Settings</span>
+</a>
+</nav>
+<div class="mt-auto pt-stack-lg border-t border-outline-variant px-stack-sm">
+<div class="flex flex-col gap-stack-sm pb-stack-md">
+<a class="flex items-center gap-stack-md p-stack-sm text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined scale-90">location_on</span>
+<span class="font-label-sm text-label-sm">Addresses</span>
+</a>
+<a class="flex items-center gap-stack-md p-stack-sm text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined scale-90">credit_card</span>
+<span class="font-label-sm text-label-sm">Billing</span>
+</a>
+<a class="flex items-center gap-stack-md p-stack-sm text-error hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined scale-90">logout</span>
+<span class="font-label-sm text-label-sm">Sign Out</span>
+</a>
+</div>
+<div class="flex items-center gap-stack-md pt-stack-sm border-t border-outline-variant border-opacity-30">
+<img alt="Customer Profile" class="w-10 h-10 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBu3q7hdzhBfJ3sM2YELljjaVNDlXMimC_6SnC3RBVv2KCgyBLH5E7h1iayrYX-1ZDdHHjRBKV6S4vlxUl-tPI4mYPlRbOs7CAOb1HvbXdCg-wr22YDIce10MzvnHChL_-CGO39pUmD0i7RVuFS2VDWB13k-q4Q5E9GFlnkLBI8iRRR-8_yJF_Q_aHBRvfVEZDPgM86et6fm3XVVcHzTu1hvinue6z3X3Cufd2vWaBWif_5eLQmD9fnrO4A0zxYpsdlexz_AXJ1oY"/>
+<div class="flex flex-col overflow-hidden">
+<span class="font-label-md text-label-md font-bold text-primary truncate">Brian Okello</span>
+<a class="font-label-sm text-label-sm text-secondary hover:underline" href="#">Manage Account</a>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="md:ml-left-rail-width min-h-screen p-margin mt-16 md:mt-0 max-w-screen-xl">
+<header class="mb-stack-lg">
+<div class="flex justify-between items-start mb-stack-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">Your orders</h2>
+<div class="hidden lg:flex gap-stack-lg">
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active orders</p>
+<p class="font-headline-md text-headline-md font-bold text-primary">2</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Est. Arrival</p>
+<p class="font-headline-md text-headline-md font-bold text-secondary">Oct 18</p>
+</div>
+</div>
+</div>
+<!-- Filters & Search Section -->
+<div class="flex flex-col gap-gutter lg:flex-row lg:items-end justify-between">
+<div class="flex flex-col gap-stack-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Filter by status</span>
+<div class="flex bg-surface-container p-1 rounded-lg w-fit">
+<button class="px-stack-md py-1.5 rounded-md bg-white shadow-sm font-label-md text-label-md text-primary">All</button>
+<button class="px-stack-md py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">In motion</button>
+<button class="px-stack-md py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">Delivered</button>
+<button class="px-stack-md py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">Cancelled</button>
+</div>
+</div>
+<div class="relative w-full lg:max-w-xs">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 border border-outline-variant rounded-lg bg-surface font-body-md text-body-md focus:outline-none focus:border-primary" placeholder="Search reference or item..." type="text"/>
+</div>
+</div>
+</header>
+<!-- Orders Table/List -->
+<div class="bg-surface rounded-xl border border-outline-variant overflow-hidden shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant bg-surface-container-low">
+<th class="px-stack-md py-stack-md font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Reference</th>
+<th class="px-stack-md py-stack-md font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Summary</th>
+<th class="px-stack-md py-stack-md font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Placed date</th>
+<th class="px-stack-md py-stack-md font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Status</th>
+<th class="px-stack-md py-stack-md font-label-md text-label-md text-on-surface-variant uppercase tracking-wider text-right">Total</th>
+<th class="px-stack-md py-stack-md"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-stack-md py-stack-lg font-label-md text-label-md text-primary font-bold">PC-882391</td>
+<td class="px-stack-md py-stack-lg font-body-md text-body-md">MacBook Pro M3, USB-C Hub...</td>
+<td class="px-stack-md py-stack-lg font-body-md text-body-md">Oct 12, 2023</td>
+<td class="px-stack-md py-stack-lg">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary-fixed text-on-secondary-fixed-variant">
+                                    We're working on it
+                                </span>
+</td>
+<td class="px-stack-md py-stack-lg font-label-md text-label-md text-primary text-right">UGX 12,450,000</td>
+<td class="px-stack-md py-stack-lg text-right">
+<button class="px-stack-md py-1.5 border border-outline rounded-md font-label-md text-label-md group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">Open</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-stack-md py-stack-lg font-label-md text-label-md text-primary font-bold">PC-774022</td>
+<td class="px-stack-md py-stack-lg font-body-md text-body-md">Nespresso Pods (x100), Aeroccino</td>
+<td class="px-stack-md py-stack-lg font-body-md text-body-md">Oct 05, 2023</td>
+<td class="px-stack-md py-stack-lg">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-surface-container-highest text-on-surface">
+                                    Delivered
+                                </span>
+</td>
+<td class="px-stack-md py-stack-lg font-label-md text-label-md text-primary text-right">UGX 890,000</td>
+<td class="px-stack-md py-stack-lg text-right">
+<button class="px-stack-md py-1.5 border border-outline rounded-md font-label-md text-label-md group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">Open</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-stack-md py-stack-lg font-label-md text-label-md text-primary font-bold">PC-663910</td>
+<td class="px-stack-md py-stack-lg font-body-md text-body-md">Vitra Eames Lounge Chair...</td>
+<td class="px-stack-md py-stack-lg font-body-md text-body-md">Sep 28, 2023</td>
+<td class="px-stack-md py-stack-lg">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary-fixed text-on-secondary-fixed-variant">
+                                    In Transit
+                                </span>
+</td>
+<td class="px-stack-md py-stack-lg font-label-md text-label-md text-primary text-right">UGX 22,100,000</td>
+<td class="px-stack-md py-stack-lg text-right">
+<button class="px-stack-md py-1.5 border border-outline rounded-md font-label-md text-label-md group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all">Open</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden flex justify-around items-center h-16 w-full fixed bottom-0 z-50 bg-surface border-t border-outline-variant px-stack-sm">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary font-bold" href="#">
+<span class="material-symbols-outlined">package_2</span>
+<span class="font-label-sm text-[10px]">Orders</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="font-label-sm text-[10px]">New</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-sm text-[10px]">Track</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="font-label-sm text-[10px]">Profile</span>
+</a>
+</nav>
+</body></html>
