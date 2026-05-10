@@ -49,12 +49,11 @@ function LogoItem({ name, domain }: { name: string; domain: string }) {
         alt={name}
         onError={() => setHidden(true)}
         style={{
-          height: '28px',
+          height: '26px',
           width: 'auto',
-          maxWidth: '80px',
+          maxWidth: '76px',
           objectFit: 'contain',
           display: 'block',
-          filter: 'brightness(0) invert(1)',
         }}
       />
     </div>
@@ -81,9 +80,9 @@ const Marquee = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '40px',
-          flexWrap: 'wrap',
-          rowGap: '20px',
+          gap: '36px',
+          flexWrap: 'nowrap',
+          overflowX: 'auto',
         }}>
           {companies.map(c => (
             <LogoItem key={c.domain} name={c.name} domain={c.domain} />
