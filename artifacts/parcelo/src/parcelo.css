@@ -146,3 +146,9 @@ button {
 @media (max-width: 440px) {
   .cat-grid { grid-template-columns: repeat(2, 1fr) !important; }
 }
+@media (max-width: 1024px) {
+  .logo-grid { grid-template-columns: repeat(4, 1fr) !important; }
+}
+@media (max-width: 600px) {
+  .logo-grid { grid-template-columns: repeat(3, 1fr) !important; }
+}
