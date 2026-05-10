@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { Link, useLocation } from "wouter";
 
 interface NavItem {
@@ -106,19 +106,79 @@ function MobileTabItem({ tab }: { tab: MobileTab }) {
   );
 }
 
+function GoogleAvatar({ name }: { name: string }) {
+  const initials = name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+  return (
+    <div className="w-10 h-10 rounded-full bg-[#4285F4] flex items-center justify-center flex-shrink-0 select-none">
+      <span className="text-white text-[15px] font-semibold leading-none">{initials}</span>
+    </div>
+  );
+}
+
+function UserProfile() {
+  const [open, setOpen] = useState(false);
+  const name = "Brian Okello";
+
+  return (
+    <div className="mt-auto border-t border-outline-variant pt-4">
+      <button
+        onClick={() => setOpen((o) => !o)}
+        className="w-full flex items-center gap-3 px-2 py-2 rounded-lg hover:bg-surface-container-high transition-colors text-left"
+      >
+        <GoogleAvatar name={name} />
+        <div className="min-w-0 flex-1">
+          <div className="text-[14px] font-bold text-on-background truncate leading-tight">
+            {name}
+          </div>
+          <div className="text-[12px] text-on-surface-variant truncate">Manage account</div>
+        </div>
+        <span
+          className="material-symbols-outlined text-on-surface-variant text-[18px] flex-shrink-0 transition-transform duration-200"
+          style={open ? { transform: "rotate(180deg)" } : undefined}
+        >
+          expand_more
+        </span>
+      </button>
+
+      {open && (
+        <div className="mt-1 flex flex-col gap-0.5">
+          <a
+            href="#"
+            className="flex items-center gap-3 px-4 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all"
+          >
+            <span className="material-symbols-outlined text-[20px]">location_on</span>
+            <span className="text-[13px] font-medium leading-[1.2]">Addresses</span>
+          </a>
+          <a
+            href="#"
+            className="flex items-center gap-3 px-4 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all"
+          >
+            <span className="material-symbols-outlined text-[20px]">credit_card</span>
+            <span className="text-[13px] font-medium leading-[1.2]">Billing</span>
+          </a>
+          <a
+            href="#"
+            className="flex items-center gap-3 px-4 py-2 text-error hover:bg-error-container rounded transition-all"
+          >
+            <span className="material-symbols-outlined text-[20px]">logout</span>
+            <span className="text-[13px] font-medium leading-[1.2]">Sign Out</span>
+          </a>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function DashboardShell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-on-surface">
-      <header className="flex justify-between items-center h-16 px-10 w-full fixed top-0 z-50 bg-surface border-b border-outline-variant">
+      <header className="flex items-center h-16 px-10 w-full fixed top-0 z-50 bg-surface border-b border-outline-variant">
         <div className="text-[24px] leading-[1.3] font-black text-primary">Parcelo</div>
-        <div className="flex items-center gap-4">
-          <button className="material-symbols-outlined p-2 text-on-surface-variant hover:bg-surface-container-low transition-colors rounded-full">
-            notifications
-          </button>
-          <button className="material-symbols-outlined p-2 text-on-surface-variant hover:bg-surface-container-low transition-colors rounded-full">
-            account_circle
-          </button>
-        </div>
       </header>
 
       <aside className="hidden md:flex flex-col fixed left-0 top-16 h-[calc(100vh-64px)] w-[260px] bg-surface border-r border-outline-variant py-8 px-4">
@@ -128,42 +188,7 @@ export default function DashboardShell({ children }: { children: ReactNode }) {
           ))}
         </nav>
 
-        <div className="mt-auto pt-6 border-t border-outline-variant">
-          <div className="flex flex-col gap-1 mb-4">
-            <a
-              href="#"
-              className="flex items-center gap-3 px-4 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all"
-            >
-              <span className="material-symbols-outlined text-[20px]">location_on</span>
-              <span className="text-[12px] font-medium leading-[1.2]">Addresses</span>
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-3 px-4 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all"
-            >
-              <span className="material-symbols-outlined text-[20px]">credit_card</span>
-              <span className="text-[12px] font-medium leading-[1.2]">Billing</span>
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-3 px-4 py-2 text-error hover:bg-error-container rounded transition-all"
-            >
-              <span className="material-symbols-outlined text-[20px]">logout</span>
-              <span className="text-[12px] font-medium leading-[1.2]">Sign Out</span>
-            </a>
-          </div>
-          <div className="flex items-center gap-3 pt-4 border-t border-outline-variant px-1">
-            <div className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0">
-              <span className="material-symbols-outlined text-on-surface-variant">person</span>
-            </div>
-            <div className="min-w-0">
-              <div className="text-[14px] font-bold text-on-background truncate leading-tight">
-                Brian Okello
-              </div>
-              <div className="text-[12px] text-on-surface-variant truncate">Premium Member</div>
-            </div>
-          </div>
-        </div>
+        <UserProfile />
       </aside>
 
       <main className="pt-16 md:ml-[260px] min-h-screen">
