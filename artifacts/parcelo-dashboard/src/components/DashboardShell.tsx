@@ -13,14 +13,6 @@ const navItems: NavItem[] = [
   { href: "/wishlist", icon: "bookmark", label: "Wishlist" },
 ];
 
-const mobileTabItems: NavItem[] = [
-  { href: "/", icon: "home", label: "Home" },
-  { href: "/orders", icon: "package_2", label: "Orders" },
-  { href: "/new-order", icon: "add_circle", label: "New" },
-  { href: "/track", icon: "track_changes", label: "Track" },
-  { href: "/profile", icon: "account_circle", label: "Profile" },
-];
-
 function NavLink({ href, icon, label }: NavItem) {
   const [location] = useLocation();
   const active = location === href;
@@ -49,11 +41,27 @@ function NavLink({ href, icon, label }: NavItem) {
   );
 }
 
-function MobileTabItem({ href, icon, label }: NavItem) {
+interface MobileTab {
+  icon: string;
+  label: string;
+  href?: string;
+  externalHref?: string;
+}
+
+const mobileTabs: MobileTab[] = [
+  { href: "/", icon: "home", label: "Home" },
+  { href: "/orders", icon: "package_2", label: "Orders" },
+  { externalHref: "https://wa.me/256792170962", icon: "add_circle", label: "New" },
+  { externalHref: "https://wa.me/256792170962", icon: "track_changes", label: "Track" },
+  { href: "/wishlist", icon: "account_circle", label: "Profile" },
+];
+
+function MobileTabItem({ tab }: { tab: MobileTab }) {
   const [location] = useLocation();
-  const active = location === href;
-  return (
-    <Link href={href} className="flex flex-col items-center gap-0.5 flex-1 py-2">
+  const active = tab.href !== undefined && location === tab.href;
+
+  const content = (
+    <>
       <span
         className={[
           "material-symbols-outlined text-[22px]",
@@ -65,7 +73,7 @@ function MobileTabItem({ href, icon, label }: NavItem) {
             : undefined
         }
       >
-        {icon}
+        {tab.icon}
       </span>
       <span
         className={[
@@ -73,8 +81,27 @@ function MobileTabItem({ href, icon, label }: NavItem) {
           active ? "text-primary font-bold" : "text-on-surface-variant",
         ].join(" ")}
       >
-        {label}
+        {tab.label}
       </span>
+    </>
+  );
+
+  if (tab.externalHref) {
+    return (
+      <a
+        href={tab.externalHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex flex-col items-center gap-0.5 flex-1 py-2"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={tab.href!} className="flex flex-col items-center gap-0.5 flex-1 py-2">
+      {content}
     </Link>
   );
 }
@@ -144,8 +171,8 @@ export default function DashboardShell({ children }: { children: ReactNode }) {
       </main>
 
       <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex bg-surface border-t border-outline-variant">
-        {mobileTabItems.map((item) => (
-          <MobileTabItem key={item.href} {...item} />
+        {mobileTabs.map((tab) => (
+          <MobileTabItem key={tab.icon} tab={tab} />
         ))}
       </nav>
     </div>

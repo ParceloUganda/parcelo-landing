@@ -13,7 +13,7 @@ export default function Home() {
       </header>
 
       <section className="mb-12">
-        <div className="bg-[#FFF8E1] p-8 rounded-xl border border-secondary/20 relative overflow-hidden">
+        <div className="bg-action-required-bg p-8 rounded-xl border border-secondary/20 relative overflow-hidden">
           <div className="relative z-10">
             <div className="flex items-center gap-2 text-secondary mb-4">
               <span className="material-symbols-outlined">priority_high</span>
