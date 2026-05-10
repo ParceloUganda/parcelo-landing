@@ -376,15 +376,6 @@ export default function Terms() {
 
       <section style={{ padding: '72px 24px 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: '680px', margin: 'auto' }}>
-          <div style={{
-            display: 'inline-flex', alignItems: 'center', gap: '8px',
-            background: 'rgba(251,202,12,0.08)', border: '1px solid rgba(251,202,12,0.2)',
-            borderRadius: '8px', padding: '6px 14px', marginBottom: '24px',
-          }}>
-            <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--gold)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-              Draft for Legal Review
-            </span>
-          </div>
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, letterSpacing: '-0.03em', margin: '0 0 16px' }}>
             Terms of Use
           </h1>
