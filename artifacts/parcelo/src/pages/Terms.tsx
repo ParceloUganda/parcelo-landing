@@ -391,21 +391,6 @@ export default function Terms() {
           <p style={{ fontSize: '15px', color: 'var(--text-muted)', margin: '0 0 12px', lineHeight: 1.7 }}>
             The agreement between Parcelo Freight Solutions Limited and any person or organisation who requests, uses, or pays for our Concierge and Fulfilment Service.
           </p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '16px', marginTop: '20px' }}>
-            {[
-              { label: 'Document Ref.', value: 'PCL-LEGAL-TOU-26-001' },
-              { label: 'Version', value: 'v0.1 (Draft)' },
-              { label: 'Governing Law', value: 'Republic of Uganda' },
-            ].map(item => (
-              <div key={item.label} style={{
-                background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '10px',
-                padding: '12px 18px', textAlign: 'center',
-              }}>
-                <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-faint)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '4px' }}>{item.label}</div>
-                <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text)' }}>{item.value}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
