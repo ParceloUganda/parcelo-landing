@@ -1,8 +1,6 @@
 import { ReactNode } from "react";
 import { Link, useLocation } from "wouter";
 
-const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
-
 interface NavItem {
   href: string;
   icon: string;
@@ -13,6 +11,14 @@ const navItems: NavItem[] = [
   { href: "/", icon: "home", label: "Home" },
   { href: "/orders", icon: "package_2", label: "Orders" },
   { href: "/wishlist", icon: "bookmark", label: "Wishlist" },
+];
+
+const mobileTabItems: NavItem[] = [
+  { href: "/", icon: "home", label: "Home" },
+  { href: "/orders", icon: "package_2", label: "Orders" },
+  { href: "/new-order", icon: "add_circle", label: "New" },
+  { href: "/track", icon: "track_changes", label: "Track" },
+  { href: "/profile", icon: "account_circle", label: "Profile" },
 ];
 
 function NavLink({ href, icon, label }: NavItem) {
@@ -47,10 +53,7 @@ function MobileTabItem({ href, icon, label }: NavItem) {
   const [location] = useLocation();
   const active = location === href;
   return (
-    <Link
-      href={href}
-      className="flex flex-col items-center gap-0.5 flex-1 py-2"
-    >
+    <Link href={href} className="flex flex-col items-center gap-0.5 flex-1 py-2">
       <span
         className={[
           "material-symbols-outlined text-[22px]",
@@ -127,7 +130,9 @@ export default function DashboardShell({ children }: { children: ReactNode }) {
               <span className="material-symbols-outlined text-on-surface-variant">person</span>
             </div>
             <div className="min-w-0">
-              <div className="text-[14px] font-bold text-on-background truncate leading-tight">Brian Okello</div>
+              <div className="text-[14px] font-bold text-on-background truncate leading-tight">
+                Brian Okello
+              </div>
               <div className="text-[12px] text-on-surface-variant truncate">Premium Member</div>
             </div>
           </div>
@@ -135,31 +140,13 @@ export default function DashboardShell({ children }: { children: ReactNode }) {
       </aside>
 
       <main className="pt-16 md:ml-[260px] min-h-screen">
-        <div className="pb-20 md:pb-0">
-          {children}
-        </div>
+        <div className="pb-20 md:pb-0">{children}</div>
       </main>
 
       <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex bg-surface border-t border-outline-variant">
-        {navItems.map((item) => (
+        {mobileTabItems.map((item) => (
           <MobileTabItem key={item.href} {...item} />
         ))}
-        <Link
-          href="/orders"
-          className="flex flex-col items-center gap-0.5 flex-1 py-2"
-        >
-          <span className="material-symbols-outlined text-[22px] text-on-surface-variant">add_circle</span>
-          <span className="text-[10px] font-medium text-on-surface-variant leading-tight">New</span>
-        </Link>
-        <a
-          href="https://wa.me/256792170962"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-col items-center gap-0.5 flex-1 py-2"
-        >
-          <span className="material-symbols-outlined text-[22px] text-on-surface-variant">track_changes</span>
-          <span className="text-[10px] font-medium text-on-surface-variant leading-tight">Track</span>
-        </a>
       </nav>
     </div>
   );

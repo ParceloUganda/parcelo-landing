@@ -1,3 +1,5 @@
+import { Link } from "wouter";
+
 interface WishlistItem {
   id: number;
   name: string;
@@ -101,12 +103,12 @@ export default function Wishlist() {
           <p className="text-on-surface-variant text-[16px] leading-[1.5] mb-8">
             Save quotes here to review them later.
           </p>
-          <a
+          <Link
             href="/"
             className="bg-primary text-on-primary px-8 py-3 rounded font-bold text-[14px] leading-[1.2]"
           >
             Back to Home
-          </a>
+          </Link>
         </div>
       ) : (
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">

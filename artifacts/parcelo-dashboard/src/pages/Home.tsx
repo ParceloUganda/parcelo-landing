@@ -1,3 +1,5 @@
+import { Link } from "wouter";
+
 export default function Home() {
   return (
     <div className="px-10 py-8 max-w-[1000px] mx-auto">
@@ -23,7 +25,8 @@ export default function Home() {
               Quote awaiting approval
             </h2>
             <p className="text-[16px] leading-[1.5] text-on-surface-variant mb-6 max-w-2xl">
-              We've received your request for the Apple Store UK items. Your personalised quote is ready for review and payment. Review the details to proceed with your order.
+              We've received your request for the Apple Store UK items. Your personalised quote is
+              ready for review and payment. Review the details to proceed with your order.
             </p>
             <div className="flex items-center gap-4 flex-wrap">
               <button className="bg-secondary-container text-primary font-bold px-8 py-3 rounded-lg hover:opacity-90 active:scale-95 transition-all text-[14px]">
@@ -46,12 +49,12 @@ export default function Home() {
       <section>
         <div className="flex justify-between items-end mb-6">
           <h3 className="text-[24px] leading-[1.3] font-semibold text-primary">Recent orders</h3>
-          <a
+          <Link
             href="/orders"
             className="text-primary font-bold border-b-2 border-primary pb-1 hover:opacity-70 transition-opacity text-[14px]"
           >
             See all orders
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col gap-6">
           <div className="bg-surface border border-outline-variant p-6 rounded-lg flex items-center justify-between group hover:border-primary transition-colors">
