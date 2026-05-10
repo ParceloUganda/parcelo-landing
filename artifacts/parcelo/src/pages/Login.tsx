@@ -419,9 +419,9 @@ export default function Login() {
           {step !== 'success' && (
             <p style={{ fontSize: '12px', color: 'var(--text-faint)', textAlign: 'center', marginTop: '20px', lineHeight: 1.7 }}>
               By signing in you agree to our{' '}
-              <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'underline' }}>Terms of Service</a>
+              <Link href="/terms" style={{ color: 'var(--text-muted)', textDecoration: 'underline' }}>Terms of Service</Link>
               {' '}and{' '}
-              <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'underline' }}>Privacy Policy</a>.
+              <Link href="/privacy" style={{ color: 'var(--text-muted)', textDecoration: 'underline' }}>Privacy Policy</Link>.
             </p>
           )}
 
