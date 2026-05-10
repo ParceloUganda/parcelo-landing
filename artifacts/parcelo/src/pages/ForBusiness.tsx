@@ -142,31 +142,7 @@ export default function ForBusiness() {
 
       {/* ── HERO ── */}
       <section style={{ padding: '72px 24px 64px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{
-          position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0,
-          background: 'radial-gradient(ellipse 800px 500px at 50% 0%, rgba(251,202,12,0.07), transparent)',
-        }} />
-
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '820px', margin: 'auto' }}>
-          {/* badge */}
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '8px',
-            border: '1.5px solid var(--border-mid)',
-            borderRadius: '9999px',
-            padding: '8px 18px',
-            fontSize: '13px',
-            fontWeight: 700,
-            color: 'var(--gold)',
-            background: 'rgba(251,202,12,0.06)',
-            marginBottom: '28px',
-            letterSpacing: '0.02em',
-          }}>
-            <span style={{ fontSize: '16px' }}>🏢</span>
-            For Businesses &amp; Partners
-          </div>
-
           <h1 style={{
             fontSize: 'clamp(40px, 6vw, 72px)',
             fontWeight: 800,
@@ -174,7 +150,7 @@ export default function ForBusiness() {
             letterSpacing: '-0.03em',
             margin: '0 0 20px',
           }}>
-            <span style={{ color: 'var(--gold)' }}>Scale Your Business</span>
+            <span style={{ color: '#ffffff' }}>Scale Your Business</span>
             <br />
             <span style={{ color: 'var(--text)' }}>with Parcelo</span>
           </h1>
