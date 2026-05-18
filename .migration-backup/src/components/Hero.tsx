@@ -48,7 +48,7 @@ const Hero = () => {
             style={{ padding: '15px 32px', fontSize: '16px' }}
             data-testid="link-hero-whatsapp"
           >
-            💬 Get your quote via WhatsApp
+            Get your quote via WhatsApp
           </a>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>

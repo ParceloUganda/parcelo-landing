@@ -258,7 +258,7 @@ export default function ProhibitedItems() {
                 letterSpacing: '-0.01em',
               }}
             >
-              💬 Ask Us on WhatsApp
+              Ask Us on WhatsApp
             </a>
           </div>
 

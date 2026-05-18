@@ -437,7 +437,7 @@ export default function Tracking() {
                     className="btn-gold"
                     style={{ padding: '12px 20px', fontSize: '14px', borderRadius: '10px', textDecoration: 'none' }}
                   >
-                    💬 Ask on WhatsApp
+                    Ask on WhatsApp
                   </a>
                 </div>
               </div>

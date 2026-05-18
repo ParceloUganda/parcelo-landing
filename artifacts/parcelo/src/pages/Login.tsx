@@ -234,7 +234,7 @@ export default function Login() {
                       cursor: submitting ? 'not-allowed' : 'pointer',
                     }}
                   >
-                    {submitting ? 'Sending…' : '💬 Send Code via WhatsApp'}
+                    {submitting ? 'Sending…' : 'Send Code via WhatsApp'}
                   </button>
                 </form>
 

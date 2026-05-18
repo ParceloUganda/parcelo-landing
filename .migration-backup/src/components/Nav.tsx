@@ -187,7 +187,7 @@ const Nav = () => {
               onClick={() => setMenuOpen(false)}
               style={{ display: 'block', textAlign: 'center', padding: '14px 20px', fontSize: '15px' }}
             >
-              💬 Get Free Quote
+              Get Free Quote
             </a>
           )}
 

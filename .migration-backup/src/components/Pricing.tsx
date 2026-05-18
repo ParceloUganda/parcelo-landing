@@ -95,7 +95,7 @@ const Pricing = () => {
               textAlign: 'center',
               fontSize: '15px'
             }}>
-              💬 Get your free quote
+              Get your free quote
             </a>
           </div>
 

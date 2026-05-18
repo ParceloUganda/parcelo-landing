@@ -341,7 +341,7 @@ export default function ForBusiness() {
                 className="btn-gold"
                 style={{ padding: '14px 28px', fontSize: '15px', display: 'inline-block' }}
               >
-                💬 Chat with us on WhatsApp
+                Chat with us on WhatsApp
               </a>
             </div>
           ) : (

@@ -162,7 +162,7 @@ const Footer = () => {
               <a href="tel:+256792170962" style={{ fontSize: '13px', color: 'var(--text-muted)', textDecoration: 'none' }}
                 onMouseOver={e => (e.currentTarget.style.color = 'var(--text)')}
                 onMouseOut={e => (e.currentTarget.style.color = 'var(--text-muted)')}
-              >💬 +256 792 170 962</a>
+              >+256 792 170 962</a>
               <a href="mailto:info@parcelo.ug" style={{ fontSize: '13px', color: 'var(--text-muted)', textDecoration: 'none' }}
                 onMouseOver={e => (e.currentTarget.style.color = 'var(--text)')}
                 onMouseOut={e => (e.currentTarget.style.color = 'var(--text-muted)')}

@@ -63,7 +63,7 @@ const BottomCTA = () => {
           style={{ padding: '16px 32px', fontSize: '16px', position: 'relative', zIndex: 1 }}
           data-testid="link-bottom-whatsapp"
         >
-          💬 Start Chatting on WhatsApp
+          Start Chatting on WhatsApp
         </a>
       </div>
     </section>

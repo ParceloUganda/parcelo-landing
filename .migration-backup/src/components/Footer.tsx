@@ -52,7 +52,7 @@ const Footer = () => {
               Get in Touch
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>💬 +256 700 000 000</div>
+              <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>+256 700 000 000</div>
               <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>✉️ hello@parcelo.ug</div>
               <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>📍 Kampala, Uganda</div>
             </div>
