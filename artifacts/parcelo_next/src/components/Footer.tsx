@@ -123,7 +123,7 @@ const Footer = () => {
               <SocialIcon href="https://www.facebook.com/profile.php?id=61589677193724" label="Facebook">
                 <FacebookIcon />
               </SocialIcon>
-              <SocialIcon href="https://www.instagram.com/parcelofreight1/" label="Instagram">
+              <SocialIcon href="https://www.instagram.com/parcelofreight/" label="Instagram">
                 <InstagramIcon />
               </SocialIcon>
               <SocialIcon href="https://www.linkedin.com/company/120924130" label="LinkedIn">
