@@ -85,7 +85,7 @@ const VSL = () => {
       </div>
       {VIDEO_EMBED_URL && (
         <p style={{ fontSize: '13px', color: 'var(--text-faint)', textAlign: 'center', marginTop: '16px' }}>
-          See how Parcelo works in 60 seconds.
+          {/* See how Parcelo works in 60 seconds. */}
         </p>
       )}
     </section>
