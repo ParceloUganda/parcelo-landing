@@ -47,3 +47,6 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# graphify (knowledge graph output - local artifact, do not commit)
+graphify-out/
